@@ -1,0 +1,31 @@
+{
+  "name": "equinox",
+  "version": "1.2",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrndxyz/Equinox.git"
+  },
+  "author": "wrnd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrndxyz/Equinox/issues"
+  },
+  "homepage": "https://github.com/wrndxyz/Equinox#readme",
+  "dependencies": {
+    "@nebula-services/dynamic": "^0.7.2-patch.2",
+    "@titaniumnetwork-dev/ultraviolet": "^2.0.0",
+    "@tomphttp/bare-server-node": "^2.0.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "node": "^21.2.0"
+  }
+}

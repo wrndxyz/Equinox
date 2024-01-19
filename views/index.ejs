@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Equinox V1</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/games.css" />
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+
+  <script src="/assets/js/index.js" defer></script>
+  <script src="/assets/js/particles.js"></script>
+  <script src="/assets/js/cursor.js" defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="topbar">
+
+    <div class="left-buttons">
+
+      <a id="exit" onclick="exit()" style="display: none">
+        <span style="font-weight: bold;">Exit</span>
+      </a>
+      <a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>"><span>Home</span></a>
+      <a href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>"><span>Apps</span></a>
+      <a href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>"><span>Games</span></a>
+    </div>
+    <form id="form" class="center-form">
+      <input autofocus autocomplete="off" class="search" id="search" placeholder="What's on your mind?" required />
+      <button type="submit" class="submit-button">
+        <i class="fas fa-search searchicon"></i>
+      </button>
+    </form>
+    <div class="right-section">
+      <a class="nav-btn" href="/o" style="display: flex; justify-content: flex-end; margin-left: auto;">Options</a>
+      <a id="time" class="nav-btn" style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
+    </div>
+  </div>
+  <svg height="100%" width="100%" style="position: fixed; z-index: 0;"></svg>
+
+  <div id="align">
+    <div class="left-section" style="display: flex;
+    align-items: center;
+    padding-right: 10px;">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
+          'format': 'iframe',
+          'height': 600,
+          'width': 160,
+          'params': {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
+      </script>
+    </div>
+    <iframe id="ifr"></iframe>
+    <div class="right-section" style="display: flex;
+    align-items: center;
+    padding-left: 10px;">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
+          'format': 'iframe',
+          'height': 600,
+          'width': 160,
+          'params': {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
+      </script>
+    </div>
+  </div>
+
+  <div class="alignment-container-1" style="margin-top:10%;">
+    <div class="header-container">
+      <div class="logo-image">
+        <img src="assets/eq.png" alt="Logo" id="spinning" width="100%">
+      </div>
+    </div>
+    <div class="flex-center desc" style="text-align: center;">
+      <p id="creation-info">
+        Equinox was created in 2023
+      </p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center;justify-content: center; flex-direction: column">
+
+      <div style="flex-direction: row; display: flex; margin-left: 30px">
+
+        <div class="game-container" style="margin-right: -10px; height: 100px;">
+          <div class="game" style="width: 85px; " data-href="https://wrnd.xyz">
+            <img style="border-radius: 10px"
+              src="https://media.discordapp.net/attachments/1165659118581854371/1197009599350460527/wrndpromo.png?ex=65b9b50f&is=65a7400f&hm=0a86c5ad0557c558e6262816ddeba1a900744007352b97ab1837b50656125017&=&format=webp&quality=lossless">
+
+          </div>
+        </div>
+        <div class="game-container" style="margin-right: -10px; height: 100px;">
+          <div class="game" style="width: 85px" data-href="https://facebook.com">
+            <img style="border-radius: 10px"
+              src="https://media.discordapp.net/attachments/963975944048091136/1197427118255112242/facebookpromo.png?ex=65bb39e8&is=65a8c4e8&hm=93e623d7b18a77d3e87e49c48cb3d34e349d5ef12e235eca336e6970359b095a&=&format=webp&quality=lossless">
+
+          </div>
+        </div>
+        <div class="game-container" style="margin-right: -10px; height: 100px;">
+          <div class="game" style="width: 85px" data-href="https://youtube.com">
+            <img style="border-radius: 10px"
+              src="https://media.discordapp.net/attachments/963975944048091136/1197427503178977353/ytpromo_1.png?ex=65bb3a43&is=65a8c543&hm=c786ae5840e4bec0100a7830c8669ef2ffa46bd051baccc8aa37542fa4c107dd&=&format=webp&quality=lossless">
+
+          </div>
+        </div>
+        <div class="game-container" style="margin-right: -10px; height: 100px;">
+          <div class="game" style="width: 85px" data-href="https://netflix.com">
+            <img style="border-radius: 10px"
+              src="https://media.discordapp.net/attachments/963975944048091136/1197427117948944394/netflixpromo_1.png?ex=65bb39e8&is=65a8c4e8&hm=5b9029e648da1cc867d785c49bb234c4d7067f652c62039a2e4929ecd9f18b61&=&format=webp&quality=lossless">
+          </div>
+        </div>
+      </div>
+      <div style="align-items: center; justify-content: center; justify-items: center; display: flex; text-align: center">
+        <script type="text/javascript">
+          atOptions = {
+            'key': 'b4ba488f6de54adf7c083646e108ef82',
+            'format': 'iframe',
+            'height': 50,
+            'width': 320,
+            'params': {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/b4ba488f6de54adf7c083646e108ef82/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+    </div>
+
+
+    <footer>
+      <a title="discord" href="https://discord.gg/H7JqRwykhk">Discord</a>
+      <a title="version" href="https://github.com/wrndxyz/Equinox" style="color: rgb(80, 80, 80)">
+        Equinox Version 1.25
+      </a>
+      <a title="github" href="https://github.com/wrndxyz/">WRND</a>
+    </footer>
+  </div>
+  <script src="/assets/js/home.js"></script>
+  <script src="/assets/js/games.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+  <script src="/assets/js/proxy.js" defer></script>
+  <script type='text/javascript' src='//pl22191078.toprevenuegate.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
+  
+</body>
+
+</html>
