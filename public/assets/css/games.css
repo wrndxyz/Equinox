@@ -125,8 +125,10 @@
 
 
 .promo-img {
-    height: 17px;
-    margin-right: -5px;
+    height: 28px;
+}
+.recent-img {
+    height: 34px;
 }
 
 .category-heading {

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Equinox V1</title>
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
 	<link rel="stylesheet" href="/assets/css/style.css" />
 	<link rel="stylesheet" href="/assets/css/games.css" />
@@ -37,7 +38,7 @@
 			<a href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>"><span>Games</span></a>
 		</div>
 		<form id="form" class="center-form" style="margin-top: 15px">
-			<input autofocus autocomplete="off" class="search" id="search" placeholder="What's on your mind?"
+			<input autofocus autocomplete="off" class="search" id="search" placeholder="Search Equinox Games"
 				required />
 			<button type="submit" class="submit-button">
 				<i class="fas fa-search searchicon"></i>
@@ -55,219 +56,205 @@
 		<div class="left-section" style="display: flex;
 		align-items: center;
 		padding-right: 10px;">
-		  <script type="text/javascript">
-			atOptions = {
-			  'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
-			  'format': 'iframe',
-			  'height': 600,
-			  'width': 160,
-			  'params': {}
-			};
-			document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
-		  </script>
+			<script type="text/javascript">
+				atOptions = {
+					'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
+					'format': 'iframe',
+					'height': 600,
+					'width': 160,
+					'params': {}
+				};
+				document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
+			</script>
 		</div>
 		<iframe id="ifr"></iframe>
 		<div class="right-section" style="display: flex;
 		align-items: center;
 		padding-left: 10px;">
-		  <script type="text/javascript">
-			atOptions = {
-			  'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
-			  'format': 'iframe',
-			  'height': 600,
-			  'width': 160,
-			  'params': {}
-			};
-			document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
-		  </script>
+			<script type="text/javascript">
+				atOptions = {
+					'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
+					'format': 'iframe',
+					'height': 600,
+					'width': 160,
+					'params': {}
+				};
+				document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
+			</script>
 		</div>
-	  </div>
+	</div>
 	<div class="games-body">
-		<br>
-		<h3 class="title-heading"><img style="height: 24px" class="promo-img" src="/assets/equinox.png">Games</h3>
 
-		<h3 class="category-heading" id="feat-text"><img class="promo-img" src="/assets/equinox.png">Featured</h3>
+		<h3 class="category-heading" id="feat-text"><img class="promo-img" src="/assets/eqfeatured.png"></h3>
 
 		<div class="games" id="featured">
-			<div class="game-container">
-				<div class="game" data-href="https://www.xbox.com/en-US/play/games/fortnite/BT5P2X999VH2">
+			<div id="f" class="game-container" data-href="https://www.xbox.com/en-US/play/games/fortnite/BT5P2X999VH2">
+				<div class="game">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png">
 					<h2>Fortnite</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/monkeymart/">
+			<div id="f" class="game-container" data-href="https://gnhustgames.github.io/monkeymart/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/monkeymart.webp">
 					<h2>Monkey Mart</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://radon.games/cdn/unity.html?id=slope">
+			<div id="f" class="game-container" data-href="https://radon.games/cdn/unity.html?id=slope">
+				<div class="game">
 					<img src="https://geometry-dash.co/upload/imgs/slope-game-logo4.jpg">
 					<h2>Slope</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://ducklife.online/duck-life-2.embed">
+			<div id="f" class="game-container" data-href="https://ducklife.online/duck-life-2.embed">
+				<div class="game">
 					<img
 						src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/f2431276-8a98-4214-9a88-d0ea91fe0af2.png">
 					<h2>Duck Life 2</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://dddavit.github.io/subway/">
+			<div id="f" class="game-container" data-href="https://dddavit.github.io/subway/">
+				<div class="game">
 					<img src="https://assets-prd.ignimgs.com/2023/03/01/subwaysurfers-1677630205274.jpg">
 					<h2>Subway Surfers</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://1v1.lol/">
-					<img
-						src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co">
-					<h2>1v1.lol</h2>
-				</div>
-			</div>
-			<div class="game-container">
-				<div id="container-217cd133747e3fc65bc0a2eaf13c2cc8"></div>
-			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://totaljerkface.com/happy_wheels.tjf">
+			<div id="f" class="game-container" data-href="https://totaljerkface.com/happy_wheels.tjf">
+				<div class="game">
 					<img
 						src="https://m.media-amazon.com/images/M/MV5BZWU1ZTYxNzEtNWNkOC00MDNhLWI2ZGYtOGEyYzQyYzllYjBiXkEyXkFqcGdeQXVyMzUwNDgxNTY@._V1_.jpg">
-					<img class="featured-hover-img"
-						src="https://img.gamepix.com/games/happy-wheels/cover/happy-wheels.png?width=600&height=340&fit=cover&quality=90">
 					<h2>Happy Wheels</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/tinyfishing/">
+			<div id="f" class="game-container" data-href="https://gnhustgames.github.io/tinyfishing/">
+				<div class="game">
 					<img
 						src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/c8cb366d52fc2a67fb313c344efdbc9e.png">
 					<h2>Tiny Fishing</h2>
 				</div>
 			</div>
-			
+
 		</div>
-		<h3 class="category-heading"><img class="promo-img" src="/assets/equinox.png">Recently Added</h3>
-		<div class="games">
-			<div class="game-container">
-				<div class="game" data-href="https://radon.games/cdn/html/2048/index.html">
+		<h3 class="category-heading" id="recent-txt"><img class="recent-img" src="/assets/eqrecent.png"></h3>
+		<div class="games" id="recent">
+			<div id="r" class="game-container" data-href="https://radon.games/cdn/html/2048/index.html">
+				<div class="game">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/2048_logo.png?20140521230317">
 					<h2>2048</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://chess.com">
+			<div id="r" class="game-container" data-href="https://chess.com">
+				<div class="game">
 					<img
 						src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d8/f3/e2/d8f3e258-cb6e-0d9a-ae58-c29edfe4b4e5/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/1024x1024.jpg">
 					<h2>Chess</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/blockpost/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/blockpost/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/blockpost.webp">
 					<h2>Blockpost</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/paperio/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/paperio/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/paperio.jpg">
 					<h2>Paper.io</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/holeio/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/holeio/">
+				<div class="game">
 					<img
 						src="https://www.jopi.com/cdn-cgi/image/quality=78,width=304,height=304,fit=cover,f=auto/img/t/hole-io.png">
 					<h2>Hole.io</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/armedforces/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/armedforces/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/armedforces.jpg">
 					<h2>Armed Forces IO</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/yohoho/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/yohoho/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/yohoho.jpg">
 					<h2>YoHoHo.io</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/boxingrandom/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/boxingrandom/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/boxingrandom.avif">
 					<h2>Boxing Random</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/minesweeper/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/minesweeper/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/minesweeper.png">
 					<h2>Minesweeper</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/tetris/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/tetris/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/tetris.jpeg">
 					<h2>Tetris (Legacy)</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/templerun2/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/templerun2/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/templerun2.png">
 					<h2>Temple Run 2</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/pacman/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/pacman/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/pacman.webp">
 					<h2>Pacman</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/granny/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/granny/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/granny.png">
 					<h2>Granny</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/learntofly2/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/learntofly2/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/learntofly.avif">
 					<h2>Learn 2 Fly</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/fireboy-watergirl-3/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/fireboy-watergirl-3/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/fireboywatergirl.avif">
 					<h2>Fireboy and Watergirl</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/friday-night-funkin/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/friday-night-funkin/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/fnf.png">
 					<h2>Friday Night Funkin'</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/bitlife/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/bitlife/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/bitlife.png">
 					<h2>BitLife</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/geometrydash/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/geometrydash/">
+				<div class="game">
 					<img src="https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.PNG">
 					<h2>Geometry Dash</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/clickercookie/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/clickercookie/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/clickercookie.png">
 					<h2>Cookie Clicker</h2>
 				</div>
 			</div>
-			<div class="game-container">
-				<div class="game" data-href="https://gnhustgames.github.io/tunnelrush/">
+			<div id="r" class="game-container" data-href="https://gnhustgames.github.io/tunnelrush/">
+				<div class="game">
 					<img src="https://gnhustgames.github.io/assets/imageGame/tunnelrush.jpg">
 					<h2>Tunnel Rush</h2>
 				</div>
@@ -312,10 +299,13 @@
 	<script src="/assets/js/proxy.js"></script>
 	<script src="/assets/js/games.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<script type='text/javascript' src='//pl22191078.toprevenuegate.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
+	<script type='text/javascript'
+		src='//pl22191078.toprevenuegate.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
 	<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
-	<script async="async" data-cfasync="false" src="//pl22191497.toprevenuegate.com/217cd133747e3fc65bc0a2eaf13c2cc8/invoke.js"></script>
-	<script type='text/javascript' src='//pl22191568.toprevenuegate.com/b6/e0/ec/b6e0ec54dbf936acd1402f566ddcd6c3.js'></script>
+	<script async="async" data-cfasync="false"
+		src="//pl22191497.toprevenuegate.com/217cd133747e3fc65bc0a2eaf13c2cc8/invoke.js"></script>
+	<script type='text/javascript'
+		src='//pl22191568.toprevenuegate.com/b6/e0/ec/b6e0ec54dbf936acd1402f566ddcd6c3.js'></script>
 
 </body>
 

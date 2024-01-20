@@ -12,3 +12,14 @@
 # v1.25
 • Bug fixes
 • We now have monetization. I've gotta have a way to be able to buy domains man.
+
+# v1.26
+• Bug fixes
+
+# v1.27
+• Migrate to the name 'Equinox'
+• Bug fixes
+
+# v1.28 
+• Searching games and apps is now more responsive and less cluttered
+• Bug fixes
