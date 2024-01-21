@@ -1,0 +1,234 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Equinox V1</title>
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/games.css" />
+
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="/uv/uv.bundle.js"></script>
+	<script src="/uv/uv.config.js"></script>
+
+	<script src="/assets/js/index.js" defer></script>
+	<script src="/assets/js/particles.js"></script>
+	<script src="/assets/js/cursor.js" defer></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
+		crossorigin="anonymous"></script>
+	<meta name="google-adsense-account" content="ca-pub-1551126437976866">
+
+
+
+
+
+</head>
+
+<body>
+	<div class="topbar">
+
+		<div class="left-buttons">
+
+			<a id="exit" onclick="exit()" style="display: none">
+				<span style="font-weight: bold;">Exit</span>
+			</a>
+			<a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>"><span>Home</span></a>
+			<a href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>"><span>Apps</span></a>
+			<a href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>"><span>Games</span></a>
+		</div>
+		<form id="form" class="center-form" style="margin-top: 15px">
+			<input autofocus autocomplete="off" class="search" id="search" placeholder="Search Equinox Apps"
+				required />
+			<button type="submit" class="submit-button">
+				<i class="fas fa-search searchicon"></i>
+			</button>
+		</form>
+		<div class="right-section">
+			<a class="nav-btn" href="/o"
+				style="display: flex; justify-content: flex-end; margin-left: auto;">Options</a>
+			<a id="time" class="nav-btn"
+				style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
+		</div>
+	</div>
+	<svg height="100%" width="100%" style="position: fixed; z-index: 0;"></svg>
+	<div id="align">
+		<div class="left-section" style="display: flex;
+		align-items: center;
+		padding-right: 10px;">
+			<script type="text/javascript">
+				atOptions = {
+					'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
+					'format': 'iframe',
+					'height': 600,
+					'width': 160,
+					'params': {}
+				};
+				document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
+			</script>
+		</div>
+		<iframe id="ifr"></iframe>
+		<div class="right-section" style="display: flex;
+		align-items: center;
+		padding-left: 10px;">
+			<script type="text/javascript">
+				atOptions = {
+					'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
+					'format': 'iframe',
+					'height': 600,
+					'width': 160,
+					'params': {}
+				};
+				document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
+			</script>
+		</div>
+	</div>
+	<div class="games-body">
+		<h3 class="category-heading" id="feat-text"><img class="promo-img" src="/assets/eqfeatured.png"></h3>
+
+		<div class="games" id="featured">
+			<div id="f" class="game-container" data-href="https://netflix.com">
+				<div class="game">
+					<img
+						src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=2500">
+					<h2>Netflix</h2>
+
+				</div>
+			</div>
+			<div id="f" class="game-container" data-href="https://youtube.com">
+				<div class="game">
+					<img
+						src="https://i.ytimg.com/vi/JYWezI9BN0s/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGH8gEygVMA8=&rs=AOn4CLAsXUy9Vu8xFSAptZ3spcxEHZCL_A">
+					<h2>YouTube</h2>
+
+				</div>
+			</div>
+			<div id="f" class="game-container" data-href="https://twitch.tv">
+				<div class="game">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Twitch_Logo.jpg">
+					<h2>Twitch</h2>
+				</div>
+			</div>
+			<div id="f" class="game-container" data-href="https://twitter.com">
+				<div class="game">
+					<img src="https://static.dezeen.com/uploads/2012/06/dezeen_twitter-bird.gif">
+					<h2>X</h2>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="category-heading" id="recent-txt"><img class="recent-img" src="/assets/eqrecent.png"></h3>
+
+		<div class="games" id="recent">
+			<div class="game-container" data-href="https://binbashbanana.github.io/webretro/">
+				<div class="game">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTalIiu-8elLakql8gnASNsyyWJdY5sE5iyP51tDaCfCRZjBVy1O8MPM_M_8xx0rZGIpw&usqp=CAU">
+					<h2>WebRetro</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://tiktok.com/">
+				<div class="game">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4wflqiZ7uea-h8mr6r4ZTzi75kSlaNKFyzQ&usqp=CAU">
+					<h2>TikTok</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://www.mathway.com/Algebra">
+				<div class="game">
+					<img
+						src="https://yt3.googleusercontent.com/ytc/AIf8zZR4J1HzO6qcn88_BcaPQK1wnbvs8tuu6h4Q_lOoLw=s900-c-k-c0x00ffffff-no-rj">
+					<h2>Mathway</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://google.com">
+				<div class="game">
+					<img src="https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-450x450.jpg">
+					<h2>Google</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://xbox.com/play">
+				<div class="game">
+					<img
+						src="https://cdn-1.webcatalog.io/catalog/xbox-cloud-gaming/xbox-cloud-gaming-icon-filled-256.png?v=1675596723649">
+					<h2>Xbox Cloud Gaming</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://play.geforcenow.com">
+				<div class="game">
+					<img
+						src="https://play-lh.googleusercontent.com/vobh63LuLl3B59tlHTCrSdpWzH0b_IfOsOtpVFaLK-hNQnJiWntiUgQpnhlKeIeYXBM">
+					<h2>GeForce Now</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://facebook.com">
+				<div class="game">
+					<img src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png">
+					<h2>Facebook</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://wikipedia.org">
+				<div class="game">
+					<img src="https://i.insider.com/5fbd515550e71a001155724f?width=700">
+					<h2>Wikipedia</h2>
+				</div>
+			</div>
+			<div id="r" class="game-container" data-href="https://pinterest.com">
+				<div class="game">
+					<img src="https://static-00.iconduck.com/assets.00/pinterest-icon-2048x2048-d7p0u7c5.png">
+					<h2>Pinterest</h2>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<footer style="margin-top: auto">
+		<script type="text/javascript">
+			atOptions = {
+				'key': 'f0cbd755148aacdf2e56ed476baef188',
+				'format': 'iframe',
+				'height': 90,
+				'width': 728,
+				'params': {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/f0cbd755148aacdf2e56ed476baef188/invoke.js"></scr' + 'ipt>');
+		</script>
+		<script type="text/javascript">
+			atOptions = {
+				'key': 'f0cbd755148aacdf2e56ed476baef188',
+				'format': 'iframe',
+				'height': 90,
+				'width': 728,
+				'params': {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/f0cbd755148aacdf2e56ed476baef188/invoke.js"></scr' + 'ipt>');
+		</script>
+		<script type="text/javascript">
+			atOptions = {
+				'key': 'f0cbd755148aacdf2e56ed476baef188',
+				'format': 'iframe',
+				'height': 90,
+				'width': 728,
+				'params': {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/f0cbd755148aacdf2e56ed476baef188/invoke.js"></scr' + 'ipt>');
+		</script>
+	</footer>
+	<script src="/assets/js/proxy.js"></script>
+	<script src="/assets/js/games.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+	<script type='text/javascript'
+		src='//pl22191078.toprevenuegate.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
+	<script async="async" data-cfasync="false"
+		src="//pl22191497.toprevenuegate.com/217cd133747e3fc65bc0a2eaf13c2cc8/invoke.js"></script>
+	<script type='text/javascript'
+		src='//pl22191568.toprevenuegate.com/b6/e0/ec/b6e0ec54dbf936acd1402f566ddcd6c3.js'></script>
+
+
+</body>
+
+</html>
