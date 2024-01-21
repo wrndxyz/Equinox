@@ -23,3 +23,6 @@
 # v1.28 
 • Searching games and apps is now more responsive and less cluttered
 • Bug fixes
+
+# v1.29
+• Start of mobile support
