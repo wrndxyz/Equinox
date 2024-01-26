@@ -67,7 +67,7 @@ app.get('/g', (req, res) => {
     }
 });
 
-app.get('/o', (req, res) => {
+app.get('/s', (req, res) => {
     const userAgent = req.useragent;
 
     if (userAgent.isMobile || useragent.isTablet) {
@@ -75,7 +75,7 @@ app.get('/o', (req, res) => {
         res.sendFile(path.join(process.cwd(), './views/mobile/options.ejs'));
     } else {
         res.set('Content-Type', 'text/html');
-        res.sendFile(path.join(process.cwd(), './views/options.ejs'));
+        res.sendFile(path.join(process.cwd(), './views/settings.ejs'));
     }
 });
 

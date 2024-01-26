@@ -822,10 +822,7 @@ body.dark {background-color: #292c35;}
 
 body.dark h1, body.dark .support a {color: #fff;}
 
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
+
 
 .checkbox-label {
   background-color: #111;
