@@ -26,3 +26,8 @@
 
 # v1.29
 • Start of mobile support
+
+# v1.30
+• There is now settings! You can cloak the tab to look like Google, Google Drive, Google Docs, or Google Classroom. Completely unrecognizable! 
+• You can also change your search engine.
+• Themes, Languages, and accessiblity settings coming soon. The games system revamp is coming soon to so I can make everything faster for you.

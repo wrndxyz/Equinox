@@ -10,21 +10,11 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/games.css" />
     <link rel="stylesheet" href="/assets/css/options.css" />
-
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
 
     <script src="/assets/js/index.js" defer></script>
-    <script src="/assets/js/particles.js"></script>
     <script src="/assets/js/cursor.js" defer></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
-        crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-1551126437976866">
-
-
-
-
 
 </head>
 
@@ -48,19 +38,76 @@
             </button>
         </form>
         <div class="right-section">
-            <a class="nav-btn" href="/o"
-                style="display: flex; justify-content: flex-end; margin-left: auto;">Options</a>
+            <a class="nav-btn" href="/s"
+                style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
             <a id="time" class="nav-btn"
                 style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
         </div>
     </div>
-    <svg height="100%" width="100%" style="position: fixed; z-index: 0;"></svg>
 
+    <div class="games-body">
+        <h3 class="category-heading" id="recent-txt"><img class="recent-img" src="/assets/eqsettings.png"></h3>
+        <article class="card">
+            <article class="grid gap-big">
+                <div class="title">
+                    Search Settings
+                    <p>Settings related to Equinox Search</p>
+                </div>
+                <div class="grid col-2 gap-medium">
+                    <fieldset>
+                        <label>Select a search engine</label>
+                        <select id="engine" class="input-group" name="engine">
+                            <option value="google">Google</option>
+                            <option value="brave">Brave</option>
+                            <option value="duckduckgo">DuckDuckGo</option>
+                            <option value="yahoo">Yahoo</option>
+                        </select>
+                    </fieldset>
 
-    <div class="games-body" style="align-items: center;">
-        <h3 class="category-heading" id="feat-text"><img class="promo-img" src="/assets/equinox.png"></h3>
-        <h2>This page is under construction.</h2>
+                </div>
+            </article>
+            <article class="grid gap-big">
+                <div class="title">
+                    Site settings
+                    <p>Settings related to the site you are viewing</p>
+                </div>
+                <div class="grid col-2 gap-medium">
+                    <fieldset>
+                        <label>Tab Cloaking</label>
+                        <select id="cloak" class="input-group" name="cloak">
+                            <option value="none">None</option>
+                            <option value="google-drive">Google Drive</option>
+                            <option value="google">Google</option>
+                            <option value="google-docs">Google Docs</option>
+                            <option value="home">Google Classroom</option>
+                        </select>
+                    </fieldset>
 
+                </div>
+
+            </article>
+            <article class="grid gap-big">
+                <div class="title">
+                    Version Information
+                    <p>Information about what version of Equinox you're running.</p>
+                </div>
+                <fieldset>
+                    <label>Machine information</label>
+                    <div class="input-group">
+                        <span id="site-url">
+                            Chromium ChromeOS
+                        </span>
+                    </div>
+                    <br>
+                    <label>Version information</label>
+                    <div class="input-group">
+                        <span id="site-url">
+                            v1.30 | Updated 1/25/24 | Public Build
+                        </span>
+                    </div>
+                </fieldset>
+            </article>
+    </div>
     </div>
     <footer style="margin-top: auto">
         <script type="text/javascript">
@@ -98,6 +145,8 @@
     <script src="/assets/js/games.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+    <script src="/assets/js/settings.js"></script>
+
 </body>
 
 </html>

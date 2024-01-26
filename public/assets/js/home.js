@@ -4,27 +4,38 @@ let debounceTimeout;
 let isRequestPending = false;
 var erudaScript;
 
+
 window.addEventListener("DOMContentLoaded", () => {
 	const link = btoa(window.location.hash.slice(1));
 	if (link) go(link);
 
 	// info stuff
 	function updateText() {
-        const creationInfo = document.getElementById("creation-info");
-        const facts = [
-          "Equinox was created in 2024.",
-          "Try typing: 'Hows the weather?'",
-          "Equinox is updated almost every day!",
-          "Experienced downtime? Look at our Discord server for status updates.",
-          "Quick Fact: Equinox helps end internet censorship.",
-		  "We have a lot of popular games and apps to choose from.",
-		  "Try playing Monkey Mart in Games, it's fun.",
-        ];
-        const randomFact = facts[Math.floor(Math.random() * facts.length)];
-        creationInfo.textContent = randomFact;
-      }
-      updateText();
-      setInterval(updateText, 10000);
+		const creationInfo = document.getElementById("creation-info");
+		const facts = [
+			"Equinox was created in 2024.",
+			"Try typing: 'Hows the weather?'",
+			"Equinox is updated almost every day!",
+			"Experienced downtime? Look at our Discord server for status updates.",
+			"Quick Fact: Equinox helps end internet censorship.",
+			"We have a lot of popular games and apps to choose from.",
+			"Try playing Monkey Mart in Games, it's fun.",
+		];
+		const randomFact = facts[Math.floor(Math.random() * facts.length)];
+		creationInfo.textContent = randomFact;
+	}
+	updateText();
+	setInterval(updateText, 10000);
+
+	// on start
+	console.log(`
+		███████╗░██████╗░██╗░░░██╗██╗███╗░░██╗░█████╗░██╗░░██╗
+		██╔════╝██╔═══██╗██║░░░██║██║████╗░██║██╔══██╗╚██╗██╔╝
+		█████╗░░██║██╗██║██║░░░██║██║██╔██╗██║██║░░██║░╚███╔╝░
+		██╔══╝░░╚██████╔╝██║░░░██║██║██║╚████║██║░░██║░██╔██╗░
+		███████╗░╚═██╔═╝░╚██████╔╝██║██║░╚███║╚█████╔╝██╔╝╚██╗
+		╚══════╝░░░╚═╝░░░░╚═════╝░╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝\n
+							Version 1.30`);
 });
 
 document.getElementById("form").addEventListener("submit", (event) => {
