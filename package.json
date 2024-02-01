@@ -1,6 +1,6 @@
 {
   "name": "equinox",
-  "version": "1.2",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "type": "module",
