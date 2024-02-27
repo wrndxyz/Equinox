@@ -15,7 +15,7 @@
 /* ---- reset ---- */
 body {
   margin: 0;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 canvas {
@@ -60,7 +60,7 @@ canvas {
   text-indent: 4px;
   line-height: 14px;
   padding-bottom: 2px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
@@ -116,7 +116,7 @@ footer span {
   text-decoration: none;
   color: #3b3b3b;
   font-size: 15px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer a {
@@ -129,7 +129,7 @@ footer a:hover {
 
 #form {
   background: none;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0px 17px;
   height: 52px;
   z-index: 200;
@@ -198,7 +198,7 @@ footer a:hover {
 }
 
 .head {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   color: #824dff;
   width: 100%;
@@ -262,7 +262,7 @@ body {
 .i1::placeholder {
   color: white;
   text-align: center;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -285,7 +285,7 @@ body {
   text-decoration: none;
   font-weight: 300;
   box-sizing: border-box;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: all 0.5s ease;
   margin-right: 10px;
 }
@@ -320,7 +320,7 @@ body {
   text-decoration: none;
   font-weight: 300;
   box-sizing: border-box;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: all 0.5s ease;
   z-index: 1;
 }
@@ -450,7 +450,7 @@ label #cancel {
 }
 
 .settings-head {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   color: #8151ff;
   padding: 0px 0px 0px 0px;
@@ -458,13 +458,13 @@ label #cancel {
 }
 
 .settings-head2 {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: #8151ff;
 }
 
 .browsers {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   cursor: pointer;
@@ -480,7 +480,7 @@ label #cancel {
 
 
 option {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 5px;
   background-color: #000;
   color: #fff;
@@ -543,7 +543,7 @@ option {
 }
 
 .gs-box-header {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
@@ -559,7 +559,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #070707;
 }
 
@@ -593,7 +593,7 @@ body {
 
 #nav span {
   color: white;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #align {
@@ -630,14 +630,14 @@ ul li::before {
   margin-top: 10px;
   background-image: linear-gradient(90deg, #3a027e, #c800ff);
   background-clip: text;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
 }
 
 a {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #starsContainer {
@@ -647,7 +647,7 @@ a {
 #404 {
   color: #824dff;
   font-size: 24px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #logo {
@@ -673,7 +673,7 @@ a {
 
 #splash {
   color: rgba(180, 180, 180, 0.5);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -710,7 +710,7 @@ a {
   display: block;
   padding: 10px;
   width: 230px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 0.8vw;
   text-decoration: none;
@@ -723,7 +723,7 @@ a {
 .suggestions a:link {
   text-decoration: none;
   color: white;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .suggestions a:hover {

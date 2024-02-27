@@ -5,26 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Equinox V1</title>
+  <title>New Tab</title>
 
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="stylesheet" href="/assets/css/games.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-
+  <link rel="icon" type="image/x-icon" href="/assets/eq.ico">
 
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="/uv/uv.bundle.js"></script>
   <script src="/uv/uv.config.js"></script>
-
   <script src="/assets/js/index.js" defer></script>
-  <script src="/assets/js/particles.js"></script>
-  <script src="/assets/js/cursor.js" defer></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+  
+      gtag('config', 'G-PC9KFJ31NH');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
     crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <div id="particles-js" style="height: 100%; width: 100%; position: fixed; z-index: 0;"></div>
   <div class="topbar">
 
     <div class="left-buttons">
@@ -43,42 +48,14 @@
       </button>
     </form>
     <div class="right-section">
-      <a class="nav-btn" href="/s" style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
+      <a class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>" href="/s" style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
       <a id="time" class="nav-btn" style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
     </div>
   </div>
-  <svg height="100%" width="100%" style="position: fixed; z-index: 0;"></svg>
 
   <div id="align">
-    <div class="left-section" style="display: flex;
-    align-items: center;
-    padding-right: 10px;">
-      <script type="text/javascript">
-        atOptions = {
-          'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
-          'format': 'iframe',
-          'height': 600,
-          'width': 160,
-          'params': {}
-        };
-        document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
-      </script>
-    </div>
     <iframe id="ifr"></iframe>
-    <div class="right-section" style="display: flex;
-    align-items: center;
-    padding-left: 10px;">
-      <script type="text/javascript">
-        atOptions = {
-          'key': '0e53dc61b74d08f40149d3cdfbd1bf97',
-          'format': 'iframe',
-          'height': 600,
-          'width': 160,
-          'params': {}
-        };
-        document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/0e53dc61b74d08f40149d3cdfbd1bf97/invoke.js"></scr' + 'ipt>');
-      </script>
-    </div>
+    <div id="m"></div>
   </div>
 
   <div class="alignment-container-1" style="margin-top:10%;">
@@ -94,58 +71,71 @@
     </div>
     <div style="display: flex; flex-wrap: wrap; align-items: center;justify-content: center; flex-direction: column">
 
-      <div style="flex-direction: row; display: flex; margin-left: 30px">
+      <div style="flex-direction: row; display: flex; margin-left: 30px; margin-bottom: 15px">
 
         <div class="game-container" data-href="https://wrnd.xyz" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 85px; ">
+          <div class="game" style="width: 94px;
+          height: auto;
+          background: rgb(20 19 19 / 53%);
+          backdrop-filter: saturate(180%) blur(20px);
+          -webkit-backdrop-filter: blur(8px);
+          -moz-backdrop-filter: blur(8px);
+          -ms-backdrop-filter: blur(8px);">
             <img style="border-radius: 10px"
-              src="https://media.discordapp.net/attachments/1165659118581854371/1197009599350460527/wrndpromo.png?ex=65b9b50f&is=65a7400f&hm=0a86c5ad0557c558e6262816ddeba1a900744007352b97ab1837b50656125017&=&format=webp&quality=lossless">
+              src="https://cdn.wrnd.lat/assets/wrnd%20(2).png">
 
           </div>
         </div>
-        <div class="game-container" data-href="https://facebook.com" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 85px">
+        <div class="game-container" data-href="https://play.geforcenow.com/games?game-id=cb2b1b5f-54ba-45fd-9839-96bbfe1376cd&lang=en_US&asset-id=01_0dd590e2-4d39-4b7f-804a-ae30330af836" style="margin-right: -10px; height: 100px;">
+          <div class="game" style="width: 94px;
+          height: auto;
+          background: rgb(20 19 19 / 53%);
+          backdrop-filter: saturate(180%) blur(20px);
+          -webkit-backdrop-filter: blur(8px);
+          -moz-backdrop-filter: blur(8px);
+          -ms-backdrop-filter: blur(8px);">
             <img style="border-radius: 10px"
-              src="https://media.discordapp.net/attachments/963975944048091136/1197427118255112242/facebookpromo.png?ex=65bb39e8&is=65a8c4e8&hm=93e623d7b18a77d3e87e49c48cb3d34e349d5ef12e235eca336e6970359b095a&=&format=webp&quality=lossless">
+              src="https://media.discordapp.net/attachments/1165659118581854371/1207884836753244190/apexpromo.png?ex=65e1456a&is=65ced06a&hm=0b22d2dd46931ce58fabf892edae7a732940510ee24e1e959b4967bdec68ace6&=&format=webp&quality=lossless">
 
           </div>
         </div>
-        <div class="game-container" data-href="https://youtube.com" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 85px">
+        <div class="game-container" data-href="https://www.xbox.com/en-US/play/games/fortnite/BT5P2X999VH2" style="margin-right: -10px; height: 100px;">
+          <div class="game" style="width: 94px;
+          height: auto;
+          background: rgb(20 19 19 / 53%);
+          backdrop-filter: saturate(180%) blur(20px);
+          -webkit-backdrop-filter: blur(8px);
+          -moz-backdrop-filter: blur(8px);
+          -ms-backdrop-filter: blur(8px);">
             <img style="border-radius: 10px"
-              src="https://media.discordapp.net/attachments/963975944048091136/1197427503178977353/ytpromo_1.png?ex=65bb3a43&is=65a8c543&hm=c786ae5840e4bec0100a7830c8669ef2ffa46bd051baccc8aa37542fa4c107dd&=&format=webp&quality=lossless">
+              src="https://media.discordapp.net/attachments/1165659118581854371/1207885646291542046/fortnitepromo.png?ex=65e1462b&is=65ced12b&hm=da40f8d35a32afbf515eae6a18a10a4ef32a28406c6fa4859d79804cecb42b67&=&format=webp&quality=lossless">
 
           </div>
         </div>
         <div class="game-container" data-href="https://netflix.com" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 85px">
+          <div class="game" style="width: 94px;
+          height: auto;
+          background: rgb(20 19 19 / 53%);
+          backdrop-filter: saturate(180%) blur(20px);
+          -webkit-backdrop-filter: blur(8px);
+          -moz-backdrop-filter: blur(8px);
+          -ms-backdrop-filter: blur(8px);">
             <img style="border-radius: 10px"
-              src="https://media.discordapp.net/attachments/963975944048091136/1197427117948944394/netflixpromo_1.png?ex=65bb39e8&is=65a8c4e8&hm=5b9029e648da1cc867d785c49bb234c4d7067f652c62039a2e4929ecd9f18b61&=&format=webp&quality=lossless">
+              src="https://cdn.wrnd.lat/assets/netflix.png">
           </div>
         </div>
-      </div>
-      <div
-        style="align-items: center; justify-content: center; justify-items: center; display: flex; text-align: center">
-        <script type="text/javascript">
-          atOptions = {
-            'key': 'b4ba488f6de54adf7c083646e108ef82',
-            'format': 'iframe',
-            'height': 50,
-            'width': 320,
-            'params': {}
-          };
-          document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/b4ba488f6de54adf7c083646e108ef82/invoke.js"></scr' + 'ipt>');
-        </script>
       </div>
     </div>
 
 
     <footer>
-      <a title="discord" href="https://discord.gg/H7JqRwykhk">Discord</a>
-      <a title="version" href="https://github.com/wrndxyz/Equinox" style="color: rgb(80, 80, 80)">
-        Equinox Version 1.30
+      <a title="discord" class="fitem" href="/tos">Terms</a>
+      <a title="discord" class="fitem" href="https://discord.gg/H7JqRwykhk">Discord</a>
+      <a title="version" href="https://github.com/wrndxyz/Equinox" style="color: rgb(83, 83, 83); font-weight: 500">
+        Equinox V1.35
       </a>
-      <a title="github" href="https://github.com/wrndxyz/">WRND</a>
+      <a title="github" class="fitem" href="https://github.com/wrndxyz/">WRND</a>
+      <a title="discord" class="fitem" href="/credits">Credits</a>
     </footer>
   </div>
   <script src="/assets/js/home.js"></script>
@@ -153,10 +143,8 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
   <script src="/assets/js/proxy.js" defer></script>
-  <script type='text/javascript'
-    src='//pl22191078.toprevenuegate.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
   <script src="/assets/js/functions.js"></script>
-
+  <script type='text/javascript' src='//pl22191078.profitablegatecpm.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
 </body>
 
 </html>

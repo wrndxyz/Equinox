@@ -1,7 +1,5 @@
 import { createBareServer } from "@tomphttp/bare-server-node";
 import { createServer } from "node:http";
-import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
-import { dynamicPath } from "@nebula-services/dynamic";
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
@@ -24,11 +22,8 @@ app.use(
 );
 
 app.set("view engine", "ejs");
-
+app.use("/uv/", express.static(path.join(__dirname, "/assets/uv")));
 app.use(express.static(path.join(__dirname, "/public")));
-app.use("/uv/", express.static(uvPath));
-app.use("/dynamic/", express.static(dynamicPath));
-
 app.set("views", path.join(__dirname, "/views"));
 
 app.get('/', (req, res) => {
@@ -78,6 +73,17 @@ app.get('/s', (req, res) => {
         res.sendFile(path.join(process.cwd(), './views/settings.ejs'));
     }
 });
+
+app.get('/credits', (req, res) => {
+    res.set('Content-Type', 'text/html');
+    res.sendFile(path.join(process.cwd(), './views/credits.ejs'));
+});
+
+app.get('/tos', (req, res) => {
+    res.set('Content-Type', 'text/html');
+    res.sendFile(path.join(process.cwd(), './views/tos.ejs'));
+});
+
 
 app.use((_, res) => res.status(404).render("404"));
 

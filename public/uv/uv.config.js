@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: "/equinox-uv/",
+    prefix: "/edu/",
     bare: "/bare/",
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,

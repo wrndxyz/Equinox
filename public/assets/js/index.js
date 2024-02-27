@@ -1,10 +1,4 @@
-window.bare = new Ultraviolet.BareClient(new URL(__uv$config.bare, window.location));
-
-
 async function registerSW() {
-	await navigator.serviceWorker.register("/dynamic.sw-handler.js", {
-		scope: "/dn",
-	});
 	const workerURL = "/uv.sw-handler.js";
 	const worker = await navigator.serviceWorker.getRegistration(workerURL, {
 		scope: "/uv",

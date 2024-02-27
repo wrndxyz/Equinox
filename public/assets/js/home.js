@@ -13,13 +13,16 @@ window.addEventListener("DOMContentLoaded", () => {
 	function updateText() {
 		const creationInfo = document.getElementById("creation-info");
 		const facts = [
-			"Equinox was created in 2024.",
-			"Try typing: 'Hows the weather?'",
-			"Equinox is updated almost every day!",
+			"Equinox was created in January 2024.",
+			"The ads you see have a purpose!",
+			"Equinox is updated very frequently.",
+			"Happy browsing!",
 			"Experienced downtime? Look at our Discord server for status updates.",
-			"Quick Fact: Equinox helps end internet censorship.",
+			"https://discord.gg/H7JqRwykhk",
+			"Customize your experience in settings!",
 			"We have a lot of popular games and apps to choose from.",
-			"Try playing Monkey Mart in Games, it's fun.",
+			"Have you ever played Monkey Mart? It's so fun!",
+			"Equinox was made by wrnd."
 		];
 		const randomFact = facts[Math.floor(Math.random() * facts.length)];
 		creationInfo.textContent = randomFact;
@@ -35,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		██╔══╝░░╚██████╔╝██║░░░██║██║██║╚████║██║░░██║░██╔██╗░
 		███████╗░╚═██╔═╝░╚██████╔╝██║██║░╚███║╚█████╔╝██╔╝╚██╗
 		╚══════╝░░░╚═╝░░░░╚═════╝░╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝\n
-							Version 1.30`);
+							Version 1.34`);
 });
 
 document.getElementById("form").addEventListener("submit", (event) => {
