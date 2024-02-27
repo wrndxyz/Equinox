@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/1165659118581854371/1198537583316189205/eqbanner.png" alt="Logo">
+  <img src="https://media.discordapp.net/attachments/1165659118581854371/1211861180444975124/eqbanner.png?ex=65efbcac&is=65dd47ac&hm=69a724320288a25b3ee79b0435e46a10dd8419f2e39f5aae9cb1be953cd0f7df&=&format=webp&quality=lossless&width=550&height=138" alt="Logo">
 </div>
 
 <div align="center">
