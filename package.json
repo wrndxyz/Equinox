@@ -27,6 +27,7 @@
     "express-device": "^0.4.2",
     "express-useragent": "^1.0.15",
     "http": "^0.0.1-security",
-    "node": "^21.2.0"
+    "node": "^21.2.0",
+    "pm2": "^5.3.1"
   }
 }

@@ -65,3 +65,8 @@ Thanks for the continued support!
 # v1.35
 • There are now themes. Choose from: Default, Flashbang, Ocean, and Kong Rats
 • Bug fixes
+
+# v1.36
+• Both the Apps and Games page have been revamped. There is now a loading screen and an alert for games that may take a minute to load
+• New games have been added
+• Minor Bug fixes

@@ -1,0 +1,52 @@
+{
+    "featured": [
+      {
+        "name": "Netflix",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/netflix_1.png",
+        "url": "https://netflix.com"
+      },
+      {
+        "name": "Now.gg",
+        "image": "https://store-images.s-microsoft.com/image/apps.46278.e618c910-4d64-4a8e-908c-4777a574f851.6583fc90-c88b-48fb-adf9-2ac6dda4548e.e8a1aa8b-8972-4eef-a1de-aa2fd68a5d61",
+        "url": "https://nowgg.nl"
+      },
+      {
+        "name": "YouTube",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/youtube_2.png",
+        "url": "https://youtube.com"
+      },
+      {
+        "name": "Twitch",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/twitch.png",
+        "url": "https://twitch.tv"
+      }
+    ],
+    "recent": [
+      {
+        "name": "WebRetro",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/webret.png",
+        "url": "https://binbashbanana.github.io/webretro/"
+      },
+      {
+        "name": "Mathway",
+        "image": "https://yt3.googleusercontent.com/ytc/AIf8zZR4J1HzO6qcn88_BcaPQK1wnbvs8tuu6h4Q_lOoLw=s900-c-k-c0x00ffffff-no-rj",
+        "url": "https://mathway.com"
+
+      },
+      {
+        "name": "Google",
+        "image": "https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-450x450.jpg",
+        "url": "https://google.com"
+      },
+      {
+        "name": "Xbox Cloud Gaming",
+        "image": "https://cdn-1.webcatalog.io/catalog/xbox-cloud-gaming/xbox-cloud-gaming-icon-filled-256.png?v=1675596723649",
+        "url": "https://xbox.com/play"
+      },
+      {
+        "name": "GeForce Now",
+        "image": "https://play-lh.googleusercontent.com/vobh63LuLl3B59tlHTCrSdpWzH0b_IfOsOtpVFaLK-hNQnJiWntiUgQpnhlKeIeYXBM",
+        "url": "https://play.geforcenow.com"
+      }
+    ]
+  }

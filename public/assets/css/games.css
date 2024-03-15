@@ -13,6 +13,68 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.loading-screen {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.932);
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-progress {
+    height: 20px;
+    width: 584px;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+
+.loading-image {
+    height: 150px;
+    border-radius: 8px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 .featured-container {
     width: 250px;
     margin: 10px;

@@ -1,0 +1,340 @@
+{
+    "featured": [
+      {
+        "name": "Fortnite",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/fortnite.png",
+        "url": "https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
+      },
+      {
+        "name": "Roblox",
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f1dc4ca-b359-495f-94e4-95490a87a44a/df205em-409324ba-54a2-4975-acfa-98437b23704c.png/v1/fill/w_400,h_400,q_80,strp/roblox_icon_by_kapithecat_df205em-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAwIiwicGF0aCI6IlwvZlwvNmYxZGM0Y2EtYjM1OS00OTVmLTk0ZTQtOTU0OTBhODdhNDRhXC9kZjIwNWVtLTQwOTMyNGJhLTU0YTItNDk3NS1hY2ZhLTk4NDM3YjIzNzA0Yy5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.IT140zJJeztkx33COc21goFSQVnn-0_QZMwK6X4N9Nc",
+        "url": "https://educationbluesky.com/"
+      },
+      {
+        "name": "Apex Legends",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/apexlegends.png",
+        "url": "https://play.geforcenow.com/games?game-id=cb2b1b5f-54ba-45fd-9839-96bbfe1376cd&lang=en_US&asset-id=01_0dd590e2-4d39-4b7f-804a-ae30330af836"
+      },
+      {
+        "name": "1v1.lol",
+        "image": "https://yt3.googleusercontent.com/nqd64OgJUuxi0_uTUUeyq7y0-2mtewFKodyBR-BzlKQsupSHIkkHcs-BTAwS_4Ew9A_G4Ih1=s900-c-k-c0x00ffffff-no-rj",
+        "url": "gtx.learntherisks.site/games/1v1.lol/index.html"
+      },
+      {
+        "name": "Monkey Mart",
+        "image": "https://gnhustgames.github.io/assets/imageGame/monkeymart.webp",
+        "url": "https://gnhustgames.github.io/monkeymart/"
+      },
+      {
+        "name": "Slope",
+        "image": "https://www.jimbelushi.ws/unblocked-games/wp-content/uploads/2023/07/slope-game.webp",
+        "url": "https://radon.games/cdn/unity.html?id=slope"
+      },
+      {
+        "name": "Classic Minecraft",
+        "image": "https://art.pixilart.com/bba9c325087f7f9.png",
+        "url": "https://classic.minecraft.net/"
+      },
+      {
+        "name": "Subway Surfers",
+        "image": "https://assets-prd.ignimgs.com/2023/03/01/subwaysurfers-1677630205274.jpg",
+        "url": "https://ducklife.online/duck-life-2.embed"
+      },
+      {
+        "name": "Retro Bowl",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/retro-bowl.jpg",
+        "url": "https://totaljerkface.com/happy_wheels.tjf"
+      }
+    ],
+    "recent": [
+      {
+        "name": "Granny 2",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/granny2.jpg",
+        "url": "https://html5.gamedistribution.com/rvvASMiM/84a18f0ca4264a4b924cf8feae4042c1/index.html",
+        "longLoad": true
+      },
+      {
+        "name": "Plants Vs Zombies",
+        "image": "https://i1.sndcdn.com/artworks-V7OsXm83ads6jGHQ-tltN2A-t500x500.jpg",
+        "url": "https://www.gameslol.net/data/waflash/index.php?g=pvz/en/pvz",
+        "longLoad": true
+      },
+      {
+        "name": "Among Us",
+        "image": "https://cdn2.steamgriddb.com/icon_thumb/254ed7d2de3b23ab10936522dd547b78.png",
+        "url": "https://among-us-1tim-temp-dmain.netlify.app/",
+        "longLoad": true
+      },
+      {
+        "name": "Moto X3M",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/moto-x3m.jpg",
+        "url": "https://cdn.wrnd.lat/game/moto-x3m/index.html"
+      },
+      {
+        "name": "Moto X3M 2",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/motox3m2.jpg",
+        "url": "https://cdn.wrnd.lat/game/motox3m2/index.html"
+      },
+      {
+        "name": "Smash Karts",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/smash-karts.jpg",
+        "url": "https://smashkarts.io/"
+      },
+      {
+        "name": "FNAF: Sister Location",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/SLIcon.webp",
+        "url": "https://run3.io/popgame/fnaf/fnafsl.html",
+        "longLoad": true
+      },
+      {
+        "name": "FNAF 2",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/Freddys-2-buttonjpg-d63eb0.webp",
+        "url": "https://run3.io/popgame/fnaf/fnaf2.html",
+        "longLoad": true
+      },
+      {
+        "name": "The Backrooms",
+        "image": "https://cdn2.unrealengine.com/welcome-to-the-terrifying-liminal-spaces-of-the-backrooms-bots-1920x1080-c23da0401884.jpg",
+        "url": "https://kdata1.com/2022/05/backroom16/",
+        "longLoad": true
+      },
+      {
+        "name": "Drive Mad",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/drive-mad.jpg",
+        "url": "https://cdn.wrnd.lat/game/drive-mad/index.html"
+      },
+      {
+        "name": "Basketball Stars",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/basketball-stars.jpg",
+        "url": "https://cdn.wrnd.lat/game/basketball-stars/index.html"
+      },
+      {
+        "name": "Stickman Hook",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/stickman-hook.jpg",
+        "url": "https://cdn.wrnd.lat/game/stickman-hook/index.html"
+      },
+      {
+        "name": "Drift Hunters",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/drifthunters.jpg",
+        "url": "https://www.180sx.club/media/games/drift-hunters/drift-hunters.html",
+        "longLoad": true
+      },
+      {
+        "name": "Stickman Golf",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/stickman-golf.png",
+        "url": "https://cdn.wrnd.lat/game/stickman-golf/index.html"
+      },
+      {
+        "name": "Cluster Rush",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/cluster-rush.png",
+        "url": "https://cdn.wrnd.lat/game/cluster-rush/index.html",
+        "longLoad": true
+      },
+      {
+        "name": "Rooftop Snipers",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/rooftopsnipers.jpg",
+        "url": "https://cdn.wrnd.lat/game/rooftop-snipers/index.html"
+      },
+      {
+        "name": "Shell Shockers",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/shell-shockers.jpg",
+        "url": "https://shellshock.io/"
+      },
+      {
+        "name": "Papas Pizzaria",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/papaspizzaria.jpg",
+        "url": "https://cdn.wrnd.lat/game/papaspizzaria/index.html"
+      },
+      {
+        "name": "Stickman Boost",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/stickman-boost.jpg",
+        "url": "https://cdn.wrnd.lat/game/stickman-boost/index.html"
+      },
+      {
+        "name": "Flappy Bird",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/flappy-bird.jpg",
+        "url": "https://flappy-bird.co/game/flappy-bird/"
+      },
+      {
+        "name": "Madalin Stunt Cars 2",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/madalin-stunt-cars-2.jpg",
+        "url": "https://cdn.wrnd.lat/game/madalin-stunt-cars-2/index.html",
+        "longLoad": true
+      },
+      {
+        "name": "Jetpack Joyride",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/jetpack-joyride.jpg",
+        "url": "https://cdn.wrnd.lat/game/jetpack-joyride/index.html"
+      },
+      {
+        "name": "Swerve",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/swerve.jpg",
+        "url": "https://cdn.wrnd.lat/game/swerve/index.html"
+      },
+      {
+        "name": "Snake",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/snake.jpg",
+        "url": "https://cdn.wrnd.lat/game/snake/index.html"
+      },
+      {
+        "name": "Zombs Royale",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/zombsroyale.jpg",
+        "url": "https://cdn.wrnd.lat/game/zombsroyale/index.html"
+      },
+      {
+        "name": "Sushi Unroll",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/sushi-unroll.png",
+        "url": "https://cdn.wrnd.lat/game/sushi-unroll/index.html"
+      },
+      {
+        "name": "Crossy Road",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/crossy-road.jpg",
+        "url": "https://cdn.wrnd.lat/game/crossyroad/index.html"
+      },
+      {
+        "name": "Wordle",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/wordle.png",
+        "url": "https://cdn.wrnd.lat/game/wordle/index.html"
+      },
+      {
+        "name": "Solitaire",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/solitaire.jpg",
+        "url": "https://cdn.wrnd.lat/game/google-solitaire/index.html"
+      },
+      {
+        "name": "Zelda",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/zelda.jpg",
+        "url": "https://cdn.wrnd.lat/game/zelda/index.html"
+      },
+      {
+        "name": "Angry Birds",
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/Angry_Birds_promo_art.png",
+        "url": "https://cdn.wrnd.lat/game/angry-birds/index.html"
+      },
+      {
+        "name": "Bad Piggies",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Bad_Piggies.png",
+        "url": "https://cdn.wrnd.lat/game/bad-piggies/index.html"
+      },
+      {
+        "name": "Duck Life 5",
+        "image": "https://play-lh.googleusercontent.com/JQqSn7wuCj0SxBqpBThNI33qCR9gwY0str2TIAnu-m_xrVCgZk3IPxYK2S7zC9WG0ig",
+        "url": "https://cdn.wrnd.lat/game/dl5/index.html"
+      },
+      {
+        "name": "Clicker Heroes",
+        "image": "https://kizicdn.com/system/static/thumbs/big_tile_thumb/1410/thumb300_Clicker-Heroes.jpg?1556202083",
+        "url": "https://cdn.wrnd.lat/game/clicker-heroes/index.html"
+      },
+      {
+        "name": "Vex 7",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/vex7.jpeg",
+        "url": "https://cdn.wrnd.lat/game/vex7/index.html"
+      },
+      {
+        "name": "Vex 6",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/vex6.jpeg",
+        "url": "https://cdn.wrnd.lat/game/vex6/index.html"
+      },
+      {
+        "name": "Vex 5",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/vex5.jpg",
+        "url": "https://cdn.wrnd.lat/game/vex5/index.html"
+      },
+      {
+        "name": "Vex 4",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/vex4.jpg",
+        "url": "https://cdn.wrnd.lat/game/vex4/index.html"
+      },
+      {
+        "name": "Vex 3",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/vex3.jpg",
+        "url": "https://cdn.wrnd.lat/game/vex3/index.html"
+      },
+      {
+        "name": "2048",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2048_logo.png?20140521230317",
+        "url": "https://radon.games/cdn/html/2048/index.html"
+      },
+      {
+        "name": "Blockpost",
+        "image": "https://gnhustgames.github.io/assets/imageGame/blockpost.webp",
+        "url": "https://chess.com"
+      },
+      {
+        "name": "Paper.io",
+        "image": "https://gnhustgames.github.io/assets/imageGame/paperio.jpg",
+        "url": "https://gnhustgames.github.io/paperio/"
+      },
+      {
+        "name": "YoHoHo.io",
+        "image": "https://gnhustgames.github.io/assets/imageGame/yohoho.jpg",
+        "url": "https://gnhustgames.github.io/holeio/"
+      },
+      {
+        "name": "Boxing Random",
+        "image": "https://play-lh.googleusercontent.com/ZuMoNX6xiIBRwdtSL-FN0xCdXyahk8SRaPZ5_4HzkdQEp2Tm_GAsha9OcsRoSDgSw8Y",
+        "url": "https://gnhustgames.github.io/boxingrandom/"
+      },
+      {
+        "name": "Minesweeper",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/frfk_4.png",
+        "url": "https://gnhustgames.github.io/minesweeper/"
+      },
+      {
+        "name": "Tetris (Legacy)",
+        "image": "https://gnhustgames.github.io/assets/imageGame/tetris.jpeg",
+        "url": "https://gnhustgames.github.io/tetris/"
+      },
+      {
+        "name": "Temple Run 2",
+        "image": "https://gnhustgames.github.io/assets/imageGame/templerun2.png",
+        "url": "https://gnhustgames.github.io/templerun2/"
+      },
+      {
+        "name": "Pacman",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/frfk_2.png",
+        "url": "https://gnhustgames.github.io/pacman/"
+      },
+      {
+        "name": "Granny",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/granny.png",
+        "url": "https://gnhustgames.github.io/granny/"
+      },
+      {
+        "name": "Learn 2 Fly",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/learn2fly.png",
+        "url": "https://gnhustgames.github.io/learntofly2/"
+      },
+      {
+        "name": "Fireboy and Watergirl",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/frfk_3.png",
+        "url": "https://gnhustgames.github.io/fireboy-watergirl-3/"
+      },
+      {
+        "name": "Friday Night Funkin'",
+        "image": "https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/frfk.png",
+        "url": "https://gnhustgames.github.io/friday-night-funkin/"
+      },
+      {
+        "name": "BitLife",
+        "image": "https://gnhustgames.github.io/assets/imageGame/bitlife.png",
+        "url": "https://gnhustgames.github.io/bitlife/"
+      },
+      {
+        "name": "Geometry Dash",
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.PNG",
+        "url": "https://gnhustgames.github.io/geometrydash/"
+      },
+      {
+        "name": "Cookie Clicker",
+        "image": "https://gnhustgames.github.io/assets/imageGame/clickercookie.png",
+        "url": "https://gnhustgames.github.io/clickercookie/"
+      },
+      {
+        "name": "Tunnel Rush",
+        "image": "https://gnhustgames.github.io/assets/imageGame/tunnelrush.jpg",
+        "url": "https://gnhustgames.github.io/tunnelrush/"
+      }
+    ]
+  }

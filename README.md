@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/1165659118581854371/1211861180444975124/eqbanner.png?ex=65efbcac&is=65dd47ac&hm=69a724320288a25b3ee79b0435e46a10dd8419f2e39f5aae9cb1be953cd0f7df&=&format=webp&quality=lossless&width=550&height=138" alt="Logo">
+  <img src="https://media.discordapp.net/attachments/1165659118581854371/1218060820752240731/eqbanner.png?ex=66064a8a&is=65f3d58a&hm=2c2134f96d28c73571bf89610cdb09e6cdd1cbff07b903e9f7f98b10278ce1b4&=&format=webp&quality=lossless&width=1920&height=1080" alt="Logo">
 </div>
 
 <div align="center">
@@ -9,8 +9,10 @@
 
 ## Features
 - A powerful, high speed proxy
+- No more restrictions
 - Easy access to any site at any time
-- High quality games & apps
+- 50+ high quality games
+- The latest & greatest apps
 - Sleek & elegant design
 
 ## Updates

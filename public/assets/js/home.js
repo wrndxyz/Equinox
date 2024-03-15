@@ -38,12 +38,24 @@ window.addEventListener("DOMContentLoaded", () => {
 		██╔══╝░░╚██████╔╝██║░░░██║██║██║╚████║██║░░██║░██╔██╗░
 		███████╗░╚═██╔═╝░╚██████╔╝██║██║░╚███║╚█████╔╝██╔╝╚██╗
 		╚══════╝░░░╚═╝░░░░╚═════╝░╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝\n
-							Version 1.34`);
+							Version 1.35`);
 });
 
 document.getElementById("form").addEventListener("submit", (event) => {
 	event.preventDefault();
 	go(search.value);
+});
+
+const gameContainers = document.querySelectorAll(".game-container");
+
+
+gameContainers.forEach(container => {
+    container.addEventListener("click", (event) => {
+        event.preventDefault();
+        const link = container.getAttribute("data-href");
+        go(link);
+		searchInput.placeholder = link;
+    });
 });
 
 async function fetchResults(searchText) {

@@ -65,7 +65,7 @@ label {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 6px;
+  margin-top: 19px;
 }
 
 .button {
@@ -100,7 +100,7 @@ label {
 
   span {
     display: flex;
-    color: #969696;
+    color: #bfbfbf;
     height: 100%;
     background: #131111;
     padding: 8px 16px;

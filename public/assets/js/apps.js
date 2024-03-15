@@ -1,4 +1,4 @@
-fetch('games.json')
+fetch('apps.json')
     .then(response => response.json())
     .then(data => {
 
@@ -22,7 +22,7 @@ fetch('games.json')
 
             container.addEventListener('click', () => {
                 if (game.longLoad) {
-                    var result = window.confirm('This game may take a minute to load. Do you want to continue?');
+                    var result = window.confirm('This app may take a minute to load. Do you want to continue?');
                 }
                 if (game.longLoad && result) {
                     showLoadingScreen(game.name, game.image); 
