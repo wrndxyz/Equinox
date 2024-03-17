@@ -23,6 +23,7 @@ app.use(
 
 app.set("view engine", "ejs");
 app.use("/uv/", express.static(path.join(__dirname, "/assets/uv")));
+app.use("/dy/", express.static(path.join(__dirname, "/assets/dy")));
 app.use(express.static(path.join(__dirname, "/public")));
 app.set("views", path.join(__dirname, "/views"));
 

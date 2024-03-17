@@ -70,3 +70,9 @@ Thanks for the continued support!
 • Both the Apps and Games page have been revamped. There is now a loading screen and an alert for games that may take a minute to load
 • New games have been added
 • Minor Bug fixes
+
+# v1.37
+• The settings page has been revamped. There are now more options and it is more streamlined.
+• Every game and every app is now rendered through JS. I have also made it so all icons and images are local so no more blank screens for people.
+• I have added support for Dynamic. You can now switch between Ultraviolet and Dynamic in settings
+• Bug fixes

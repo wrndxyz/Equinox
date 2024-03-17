@@ -1,156 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>New Tab</title>
+      <link rel="stylesheet" href="/assets/css/style.css" />
+      <link rel="stylesheet" href="/assets/css/games.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="/assets/eq.ico">
+      <meta name="robots" content="noindex, nofollow">
+      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="/uv/uv.bundle.js"></script>
+      <script src="/uv/uv.config.js"></script>
+      <script src="/assets/js/index.js" defer></script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+         
+         gtag('config', 'G-PC9KFJ31NH');
+      </script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
+         crossorigin="anonymous"></script>
 
-  <title>New Tab</title>
+         <script src="/assets/js/functions.js" defer></script>
 
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/assets/css/games.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/eq.ico">
-  <meta name="robots" content="noindex, nofollow">
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="/uv/uv.bundle.js"></script>
-  <script src="/uv/uv.config.js"></script>
-  <script src="/assets/js/index.js" defer></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-  
-      gtag('config', 'G-PC9KFJ31NH');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
-    crossorigin="anonymous"></script>
-</head>
+   </head>
+   <body>
+      <div id="particles-js" style="height: 100%; width: 100%; position: fixed; z-index: 0;"></div>
+      <div class="topbar">
+         <div class="left-buttons">
+            <a id="exit" onclick="exit()" style="display: none">
+            <span style="font-weight: bold;">Exit</span>
+            </a>
+            <a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>"><span>Home</span></a>
+            <a href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>"><span>Apps</span></a>
+            <a href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>"><span>Games</span></a>
+         </div>
 
-<body>
-  <div id="particles-js" style="height: 100%; width: 100%; position: fixed; z-index: 0;"></div>
-  <div class="topbar">
-
-    <div class="left-buttons">
-
-      <a id="exit" onclick="exit()" style="display: none">
-        <span style="font-weight: bold;">Exit</span>
-      </a>
-      <a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>"><span>Home</span></a>
-      <a href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>"><span>Apps</span></a>
-      <a href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>"><span>Games</span></a>
-    </div>
-    <form id="form" class="center-form">
-      <input autofocus autocomplete="off" class="search" id="search" placeholder="What's on your mind?" required />
-      <button type="submit" class="submit-button">
-        <i class="fas fa-search searchicon"></i>
-      </button>
-    </form>
-    <div class="right-section">
-      <a class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>" href="/s" style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
-      <a id="time" class="nav-btn" style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
-    </div>
-  </div>
-
-  <div id="align">
-    <iframe id="ifr"></iframe>
-    <div id="m"></div>
-  </div>
-
-  <div class="loading-screen" id="loadingScreen">
-		<img class="loading-image">
-        <div class="loading-text">Loading requested site...</div>
-		<progress class="loading-progress" value="0" max="100" ></progress>
-
-    </div>
-
-  <div class="alignment-container-1" style="margin-top:10%;">
-    <div class="header-container">
-      <div class="logo-image">
-        <img src="assets/eq.png" alt="logo" id="spinning" width="100%">
+         <form id="form" class="center-form">
+            <input autofocus autocomplete="off" class="search" id="search" placeholder="What's on your mind?" required />
+            <button type="submit" class="submit-button">
+            <i class="fas fa-search searchicon"></i>
+            </button>
+         </form>
+         
+         <div class="right-section">
+            <a class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>" href="/s"
+               style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
+            <a id="time" class="nav-btn" style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
+         </div>
       </div>
-    </div>
-    <div class="flex-center desc" style="text-align: center;">
-      <p id="creation-info">
-        Equinox was created in 2023
-      </p>
-    </div>
-    <div style="display: flex; flex-wrap: wrap; align-items: center;justify-content: center; flex-direction: column">
 
-      <div style="flex-direction: row; display: flex; margin-left: 30px; margin-bottom: 15px">
-
-        <div class="game-container" data-href="https://wrnd.xyz" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 94px;
-          height: auto;
-          background: rgb(20 19 19 / 53%);
-          backdrop-filter: saturate(180%) blur(20px);
-          -webkit-backdrop-filter: blur(8px);
-          -moz-backdrop-filter: blur(8px);
-          -ms-backdrop-filter: blur(8px);">
-            <img style="border-radius: 10px"
-              src="https://cdn.wrnd.lat/assets/wrnd%20(2).png">
-
-          </div>
-        </div>
-        <div class="game-container" data-href="https://play.geforcenow.com/games?game-id=cb2b1b5f-54ba-45fd-9839-96bbfe1376cd&lang=en_US&asset-id=01_0dd590e2-4d39-4b7f-804a-ae30330af836" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 94px;
-          height: auto;
-          background: rgb(20 19 19 / 53%);
-          backdrop-filter: saturate(180%) blur(20px);
-          -webkit-backdrop-filter: blur(8px);
-          -moz-backdrop-filter: blur(8px);
-          -ms-backdrop-filter: blur(8px);">
-            <img style="border-radius: 10px"
-              src="https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/apexpromo.png">
-
-          </div>
-        </div>
-        <div class="game-container" data-href="https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 94px;
-          height: auto;
-          background: rgb(20 19 19 / 53%);
-          backdrop-filter: saturate(180%) blur(20px);
-          -webkit-backdrop-filter: blur(8px);
-          -moz-backdrop-filter: blur(8px);
-          -ms-backdrop-filter: blur(8px);">
-            <img style="border-radius: 10px"
-              src="https://raw.githubusercontent.com/wrndxyz/cdn/main/assets/fortnitepromo.png">
-
-          </div>
-        </div>
-        <div class="game-container" data-href="https://netflix.com" style="margin-right: -10px; height: 100px;">
-          <div class="game" style="width: 94px;
-          height: auto;
-          background: rgb(20 19 19 / 53%);
-          backdrop-filter: saturate(180%) blur(20px);
-          -webkit-backdrop-filter: blur(8px);
-          -moz-backdrop-filter: blur(8px);
-          -ms-backdrop-filter: blur(8px);">
-            <img style="border-radius: 10px"
-              src="https://cdn.wrnd.lat/assets/netflix.png">
-          </div>
-        </div>
+      <div id="align">
+         <iframe id="ifr"></iframe>
+         <div id="m"></div>
       </div>
-    </div>
 
+      <div class="alignment-container-1" style="margin-top:10%;">
+         <div class="header-container">
+            <div class="logo-image">
+               <img src="assets/eq.png" alt="logo" id="spinning" width="100%">
+            </div>
+         </div>
 
-    <footer>
-      <a title="discord" class="fitem" href="/tos">Terms</a>
-      <a title="discord" class="fitem" href="https://discord.gg/H7JqRwykhk">Discord</a>
-      <a title="version" href="https://github.com/wrndxyz/Equinox" style="color: rgb(83, 83, 83); font-weight: 500">
-        Equinox V1.36
-      </a>
-      <a title="github" class="fitem" href="https://github.com/wrndxyz/">WRND</a>
-      <a title="discord" class="fitem" href="/credits">Credits</a>
-    </footer>
-  </div>
-  <script src="/assets/js/home.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
-  <script src="/assets/js/proxy.js" defer></script>
-  <script src="/assets/js/functions.js"></script>
-  <script type='text/javascript' src='//pl22191078.profitablegatecpm.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
-</body>
+         <div class="flex-center desc" style="text-align: center;">
+            <p id="creation-info">
+               Equinox was created in 2023
+            </p>
+         </div>
 
+         <div style="display: flex; flex-wrap: wrap; align-items: center;justify-content: center; flex-direction: column">
+            <div style="flex-direction: row; display: flex; margin-left: 30px; margin-bottom: 15px">
+               <div class="game-container" data-href="https://wrnd.xyz" style="margin-right: -10px; height: 100px;">
+                  <div class="game" style="width: 94px;
+                     height: auto;
+                     background: rgb(20 19 19 / 53%);
+                     backdrop-filter: saturate(180%) blur(20px);
+                     -webkit-backdrop-filter: blur(8px);
+                     -moz-backdrop-filter: blur(8px);
+                     -ms-backdrop-filter: blur(8px);">
+                     <img style="border-radius: 10px" src="/assets/img/media/apps/wrnd.webp">
+                  </div>
+               </div>
+               <div class="game-container"
+                  data-href="https://play.geforcenow.com/games?game-id=cb2b1b5f-54ba-45fd-9839-96bbfe1376cd&lang=en_US&asset-id=01_0dd590e2-4d39-4b7f-804a-ae30330af836"
+                  style="margin-right: -10px; height: 100px;">
+                  <div class="game" style="width: 94px;
+                     height: auto;
+                     background: rgb(20 19 19 / 53%);
+                     backdrop-filter: saturate(180%) blur(20px);
+                     -webkit-backdrop-filter: blur(8px);
+                     -moz-backdrop-filter: blur(8px);
+                     -ms-backdrop-filter: blur(8px);">
+                     <img style="border-radius: 10px"
+                        src="/assets/img/media/games/apexpromo.webp">
+                  </div>
+               </div>
+               <div class="game-container"
+                  data-href="https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
+                  style="margin-right: -10px; height: 100px;">
+                  <div class="game" style="width: 94px;
+                     height: auto;
+                     background: rgb(20 19 19 / 53%);
+                     backdrop-filter: saturate(180%) blur(20px);
+                     -webkit-backdrop-filter: blur(8px);
+                     -moz-backdrop-filter: blur(8px);
+                     -ms-backdrop-filter: blur(8px);">
+                     <img style="border-radius: 10px"
+                        src="/assets/img/media/games/fortnitepromo.webp">
+                  </div>
+               </div>
+               <div class="game-container" data-href="https://netflix.com" style="margin-right: -10px; height: 100px;">
+                  <div class="game" style="width: 94px;
+                     height: auto;
+                     background: rgb(20 19 19 / 53%);
+                     backdrop-filter: saturate(180%) blur(20px);
+                     -webkit-backdrop-filter: blur(8px);
+                     -moz-backdrop-filter: blur(8px);
+                     -ms-backdrop-filter: blur(8px);">
+                     <img style="border-radius: 10px" src="/assets/img/media/apps/netflixsmile.webp">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <a title="discord" class="fitem" href="/tos">Terms</a>
+            <a title="discord" class="fitem" href="https://discord.gg/H7JqRwykhk">Discord</a>
+            <a title="version" href="https://github.com/wrndxyz/Equinox" style="color: rgb(83, 83, 83); font-weight: 500">
+            Equinox V1.37
+            </a>
+            <a title="github" class="fitem" href="https://github.com/wrndxyz/">WRND</a>
+            <a title="discord" class="fitem" href="/credits">Credits</a>
+         </footer>
+      </div>
+      <script src="/assets/js/home.js"></script>
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+      <script src="/assets/js/proxy.js" defer></script>
+   </body>
 </html>

@@ -2,21 +2,21 @@ const msg = document.getElementById("m");
 const frame = document.getElementById("ifr");
 
 function searchurl(url) {
-    switch (localStorage.getItem("equinox||search")) {
-        case "ddg":
-            proxy(`https://duckduckgo.com/?q=${url}`);
-            break;
-        case "brave":
-            proxy(`https://search.brave.com/search?q=${url}`);
-            break;
-        case "yahoo":
-            proxy(`https://search.yahoo.com/search?p=${url}`);
-            break;
-        default:
-        case "google":
-            proxy(`https://www.google.com/search?q=${url}`);
-            break;
-    }
+	switch (localStorage.getItem("equinox||search")) {
+		case "ddg":
+			proxy(`https://duckduckgo.com/?q=${url}`);
+			break;
+		case "brave":
+			proxy(`https://search.brave.com/search?q=${url}`);
+			break;
+		case "yahoo":
+			proxy(`https://search.yahoo.com/search?p=${url}`);
+			break;
+		default:
+		case "google":
+			proxy(`https://www.google.com/search?q=${url}`);
+			break;
+	}
 }
 
 function go(url) {
@@ -32,9 +32,9 @@ function isUrl(val = "") {
 }
 
 function resolveURL(url) {
-	switch (localStorage.getItem("proxy")) {
+	switch (localStorage.getItem("equinox||proxy")) {
 		case "dy":
-			return "/dn/" + Ultraviolet.codec.xor.decode(url);
+			return "/study/" + Ultraviolet.codec.xor.decode(url);
 		default:
 		case "uv":
 			return __uv$config.prefix + __uv$config.encodeUrl(url);
@@ -55,11 +55,11 @@ function proxy(url) {
 }
 
 function exit() {
-    document.getElementById("align").style.display = "none";
-    document.getElementById("search").placeholder = "What's on your mind?"; 
-    document.querySelector(".topbar").style.width = "50%";
-    document.querySelector(".search").value = "";
-    frame.src = "";
-    document.getElementById("exit").style.display = "none";
-    document.getElementById("homebtn").style.display = "flex";
+	document.getElementById("align").style.display = "none";
+	document.getElementById("search").placeholder = "What's on your mind?";
+	document.querySelector(".topbar").style.width = "50%";
+	document.querySelector(".search").value = "";
+	frame.src = "";
+	document.getElementById("exit").style.display = "none";
+	document.getElementById("homebtn").style.display = "flex";
 }

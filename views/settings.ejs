@@ -1,132 +1,188 @@
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>New Tab</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/games.css" />
-    <link rel="stylesheet" href="/assets/css/options.css" />
-    <script src="/uv/uv.bundle.js"></script>
-    <script src="/uv/uv.config.js"></script>
-
-    <script src="/assets/js/index.js" defer></script>
-    <script src="/assets/js/cursor.js" defer></script>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>New Tab</title>
+      <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+      <meta name="robots" content="noindex, nofollow">
+      <link rel="stylesheet" href="/assets/css/style.css" />
+      <link rel="stylesheet" href="/assets/css/games.css" />
+      <link rel="stylesheet" href="/assets/css/options.css" />
+      <script src="/uv/uv.bundle.js"></script>
+      <script src="/uv/uv.config.js"></script>
+      <script src="/assets/js/index.js" defer></script>
+      <script src="/assets/js/cursor.js" defer></script>
       <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-PC9KFJ31NH');
-  </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+         
+         gtag('config', 'G-PC9KFJ31NH');
+      </script>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1551126437976866"
-      crossorigin="anonymous"></script>
-
-</head>
-
-<body style="background-image: none">
-    <div class="topbar">
-
-        <div class="left-buttons">
-
+         crossorigin="anonymous"></script>
+   </head>
+   <body style="background-image: none">
+      <div class="topbar">
+         <div class="left-buttons">
             <a id="exit" onclick="exit()" style="display: none">
-                <span style="font-weight: bold;">Exit</span>
+            <span style="font-weight: bold;">Exit</span>
             </a>
             <a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>"><span>Home</span></a>
             <a href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>"><span>Apps</span></a>
             <a href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>"><span>Games</span></a>
-        </div>
-        <form id="form" class="center-form">
-            <input autofocus autocomplete="off" class="search" id="search" placeholder="What's on your mind?"
-                required />
+         </div>
+         <form id="form" class="center-form">
+            <input autofocus autocomplete="off" class="search" id="search" placeholder="Search Equinox Settings"
+               required />
             <button type="submit" class="submit-button">
-                <i class="fas fa-search searchicon"></i>
+            <i class="fas fa-search searchicon"></i>
             </button>
-        </form>
-        <div class="right-section">
+         </form>
+         <div class="right-section">
             <a class="nav-btn" href="/s"
-                style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
+               style="display: flex; justify-content: flex-end; margin-left: auto;">Settings</a>
             <a id="time" class="nav-btn"
-                style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
-        </div>
-    </div>
-
-    <div class="games-body">
-        <h3 class="category-heading" id="recent-txt"><img class="recent-img" src="/assets/eqsettings.png"></h3>
-        <article class="card">
+               style="display: flex; justify-content: flex-end; margin-left: auto;">00:00PM</a>
+         </div>
+      </div>
+      <div class="games-body">
+         <h3 class="category-heading" id="recent-txt"><img class="recent-img" src="/assets/eqsettings.png"
+            style="padding-left: 10px"></h3>
+         <article class="card">
             <article class="grid gap-big">
-                <div class="title">
-                    Search and Security
-                    <p>Settings related to Equinox Search</p>
-                </div>
-                <div class="grid col-2 gap-medium">
-                    <fieldset>
-                        <label>Select a search engine</label>
-                        <select id="engine" class="input-group" name="engine">
-                            <option value="google">Google</option>
-                            <option value="duckduckgo">DuckDuckGo</option>
-                            <option value="yahoo">Yahoo</option>
-                        </select>
-                    </fieldset>
-
-                </div>
+               <div class="title">
+                  Search Settings
+                  <p>Settings related to Equinox Search</p>
+               </div>
+               <div class="grid col-2">
+                  <fieldset>
+                     <label>Select a search engine</label>
+                     <select id="engine" class="input-group" name="engine">
+                        <option value="google">Google</option>
+                        <option value="duckduckgo">DuckDuckGo</option>
+                        <option value="yahoo">Yahoo</option>
+                     </select>
+                  </fieldset>
+                  <fieldset>
+                     <label>Select a proxy server</label>
+                     <select id="proxy" class="input-group" name="proxy">
+                        <option value="uv">Ultraviolet</option>
+                        <option value="dy">Dynamic</option>
+                     </select>
+                  </fieldset>
+               </div>
             </article>
+         </article>
+         <article class="card">
             <article class="grid gap-big">
-                <div class="title">
-                    Site Preferences
-                    <p>Settings related to the site you are viewing</p>
-                </div>
-                <div class="grid col-2 gap-medium">
-                    <fieldset>
-                        <label>Tab Cloaking</label>
-                        <select id="cloak" class="input-group" name="cloak">
-                            <option value="none">None</option>
-                            <option value="google-drive">Google Drive</option>
-                            <option value="google">Google</option>
-                            <option value="google-docs">Google Docs</option>
-                            <option value="home">Google Classroom</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <label>Themes</label>
-                        <select id="themes" class="input-group" name="themes">
-                            <option value="default">Default</option>
-                            <option value="flashbang">Flashbang</option>
-                            <option value="kongrats">Kong Rats</option>
-                            <option value="ocean">Ocean</option>
-                        </select>
-                    </fieldset>
+               <div class="title">
+                  Preferences & Security
+                  <p>Customize your experience on Equinox</p>
+               </div>
+               <div class="grid col-2">
+                  <fieldset>
+                     <label>
+                        Site Theme
+                        <p>Change the theme across the entire site.</p>
+                     </label>
+                     <select id="themes" class="input-group" name="themes">
+                        <option value="default">Default</option>
+                        <option value="flashbang">Flashbang</option>
+                        <option value="kongrats">Kong Rats</option>
+                        <option value="ocean">Ocean</option>
+                     </select>
+                  </fieldset>
+                  <fieldset>
+                     <label>
+                        Custom Background
+                        <p>Change the background on the home page.</p>
+                     </label>
+                     <input type="text" id="custom-background" name="custom-background" placeholder="Enter URL of custom background image" />
 
-                </div>
+                     <span class="error" id="error"></span>
+                     <div class="button-group">
+                        <button type="button" class="button" id="set-background">Save</button>
+                        <button type="button" class="button" id="remove-background">Remove</button>
+                     </div>
+                  </fieldset>
+               </div>
+               <div class="grid col-2">
+                  <fieldset>
+                     <label>
+                        Stealth Mode
+                        <p>Coming soon...
+                        </p>
+                     </label>
+   
+                  </fieldset>
+                  <fieldset>
+                     <label>
+                        Tab Cloaking
+                        <p>Change the tab icon and title of the page.</p>
+                     </label>
+                     <div class="button-group">
+                        <button type="button" id="google-cloak" onclick="cloakPage('google')" class="cloak-button"><img class="cloak-img"
+                           src="/assets/img/cloak/google.webp"></button>
+                        <button type="button" id="docs-cloak" onclick="cloakPage('docs')" class="cloak-button"><img class="cloak-img"
+                           src="/assets/img/cloak/google-docs.webp"></button>
+                        <button type="button" id="drive-cloak" onclick="cloakPage('drive')" class="cloak-button"><img class="cloak-img"
+                           src="/assets/img/cloak/google-drive.webp"></button>
+                        <button type="button" id="classroom-cloak" onclick="cloakPage('classroom')" class="cloak-button"><img class="cloak-img"
+                           src="/assets/img/cloak/home.webp"></button>
+                        <button type="button" id="chrome-cloak" onclick="cloakPage('chrome')" class="cloak-button"><img class="cloak-img"
+                           src="/assets/img/cloak/chrome.webp"></button>
 
+
+                     </div>
+                     <div class="button-group">
+                        <button type="button" class="button" id="stealth-off">Reset</button>
+                     </div>
+                  </fieldset>
+               </div>
             </article>
+         </article>
+         <article class="card">
             <article class="grid gap-big">
-                <div class="title">
-                    Version Information
-                    <p>Information about what version of Equinox you're running.</p>
-                </div>
-                <fieldset>
-                    <label>Version information</label>
-                    <div class="input-group">
-                        <span id="site-url">
-                            v1.36 | Updated 3/14/24 | Public Build
-                        </span>
-                    </div>
-                </fieldset>
-            </article>
-    </div>
-    </div>
-    <script src="/assets/js/proxy.js"></script>
-    <script src="/assets/js/games.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
-    <script src="/assets/js/settings.js"></script>
-    <script type='text/javascript' src='//pl22191078.profitablegatecpm.com/10/4f/de/104fdeafb2e5efb53ca806fb837ff878.js'></script>
-</body>
+               <div class="title">
+                  Version Details
+                  <p>Relevant system and build information of Equinox</p>
+               </div>
+               <div class="grid col-2">
+                  <fieldset>
+                     <label>
+                        Version Number
+                        <p id="eqversion">1.36<span id="latestorno"> (Latest)</span></p>
+                     </label>
+                     <label>
+                        Build Number
+                        <p id="buildnumber"></p>
+                     </label>
+                     <label>
+                        Last Updated on
+                        <p id="update-on">3/17/24</p>
+                     </label>
+                  </fieldset>
+                  <fieldset>
+                    <label>
+                        © 2024 Equinox Proxy. All rights reserved.
 
+                       <p style="line-height: 20px">Equinox, formerly known as Equinox Proxy, is a web proxy service owned by WRND. Our mission is to provide users with unrestricted access to the web. Equinox's code is open source and can be used by anyone under the terms of the MIT License. By using this site, you agree to our Terms of Service, which include but are not limited to the following: users are responsible for their actions while using Equinox, including compliance with all applicable laws and regulations; we do not guarantee the availability, accuracy, or security of the service. Thank you for using Equinox!</p>
+
+                       <img class="cloak-img" style="width: auto; height: 90px" src="/assets/eqwrnd.webp">
+                    </label>
+                 </fieldset>
+               </div>
+            </article>
+         </article>
+      </div>
+      </div>
+      <script src="/assets/js/proxy.js"></script>
+      <script src="/assets/js/games.js"></script>
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+      <script src="/assets/js/settings.js"></script>
+   </body>
 </html>

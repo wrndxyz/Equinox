@@ -50,7 +50,6 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('https://media.discordapp.net/attachments/1165659118581854371/1204949207354572800/bg.png?ex=65d69765&is=65c42265&hm=2911521bd69ac93dac9d6c8b4eb1483e0494f91a0d688372bd513630f9ff22a8&=&format=webp&quality=lossless&width=1053&height=702');
   background-attachment: fixed;
   height: 100%;
   background-position: center center;
@@ -337,7 +336,6 @@ body.background-fade {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
   padding: 0 20px;
   width: 50%;
   z-index: 200;
@@ -505,6 +503,12 @@ label #cancel {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
   transform: scale(1.1);
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .settings-head {

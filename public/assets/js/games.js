@@ -25,7 +25,7 @@ fetch('games.json')
                     var result = window.confirm('This game may take a minute to load. Do you want to continue?');
                 }
                 if (game.longLoad && result) {
-                    showLoadingScreen(game.name, game.image); 
+                    showLoadingScreen(game.name, game.image);
                     setTimeout(() => {
                         hideLoadingScreen();
                         const iframe = document.getElementById('ifr');
@@ -33,21 +33,34 @@ fetch('games.json')
                         const url = container.dataset.href;
                         go(url);
                         document.getElementById("search").placeholder = url;
-                    }, 2000); 
+                    }, 2000);
                 } else if (!game.longLoad) {
-                    showLoadingScreen(game.name, game.image); 
+                    showLoadingScreen(game.name, game.image);
                     setTimeout(() => {
-                        hideLoadingScreen();
-                        const iframe = document.getElementById('ifr');
-                        iframe.src = container.dataset.href;
-                        const url = container.dataset.href;
-                        go(url);
-                        document.getElementById("search").placeholder = url;
-                    }, 2000); 
+                        if (game.name === 'Retro Bowl') {
+                            hideLoadingScreen();
+                            const iframe = document.getElementById('ifr');
+                            iframe.src = '/assets/local/games/rb/index.html';
+                            const url = 'eq://retro-bowl';
+                            document.getElementById("align").style.display = "flex";
+	                        document.querySelector(".topbar").style.width = "98%";
+	                        document.getElementById("exit").style.display = "flex";
+	                        document.getElementById("homebtn").style.display = "none";
+                            document.getElementById("search").placeholder = url;
+                        } else {
+                            hideLoadingScreen();
+                            const iframe = document.getElementById('ifr');
+                            iframe.src = container.dataset.href;
+                            const url = container.dataset.href;
+                            go(url);
+                            document.getElementById("search").placeholder = url;
+                        }
+
+                    }, 2000);
                 }
             });
 
-            container.id = idPrefix + container.id; 
+            container.id = idPrefix + container.id;
             return container;
         }
 
@@ -71,7 +84,7 @@ fetch('games.json')
 
             loadingTitle.textContent = `Loading ${title}...`;
             loadingImage.src = imageUrl;
-            loadingProgress.value = 0; 
+            loadingProgress.value = 0;
 
             loadingScreen.style.display = 'flex';
             loadingScreen.classList.add('fade-in');
@@ -84,7 +97,7 @@ fetch('games.json')
                     clearInterval(interval);
                 }
                 loadingProgress.value = progress;
-            }, 200); 
+            }, 200);
         }
 
         function hideLoadingScreen() {

@@ -1,7 +1,10 @@
 async function registerSW() {
-	const workerURL = "/uv.sw-handler.js";
+	await navigator.serviceWorker.register("/dy.sw.js", {
+		scope: "/study",
+	});
+	const workerURL = "/sw.js";
 	const worker = await navigator.serviceWorker.getRegistration(workerURL, {
-		scope: "/uv",
+		scope: "/edu",
 	});
 	if (worker) return worker;
 	return navigator.serviceWorker.register(workerURL, { scope: __uv$config.prefix });
