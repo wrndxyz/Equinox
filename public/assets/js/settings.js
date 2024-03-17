@@ -123,6 +123,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+function updateSettings() {
+
+    const themeSelect = document.getElementById('themes');
+    const selectedTheme = themeSelect.value;
+    localStorage.setItem('equinox||theme', selectedTheme);
+
+    const engineSelect = document.getElementById('engine');
+    const selectedEngine = engineSelect.value;
+    localStorage.setItem('equinox||search', selectedEngine);
+
+    setTheme(selectedTheme);
+}
+
 // Add event listener for theme change
 document.getElementById('themes').addEventListener('change', updateSettings);
 document.getElementById('engine').addEventListener('change', updateSettings);
