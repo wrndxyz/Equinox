@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="82d50f63b4809b775ffdea9a75992354faa4d9e7" content="82d50f63b4809b775ffdea9a75992354faa4d9e7" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="/assets/css/games.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/cloak/google-drive.webp">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/index.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-PC9KFJ31NH');
+    </script>
+
+    <style>
+        .credit-item {
+            border: 0.4px solid #3333338c;
+            border-radius: 10px;
+            padding: 15px;
+            line-height: 45px;
+            padding-top: 20;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #111111;
+            margin-right: 20px;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .card {
+            article {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: none">
+    <div class="topbar" style="justify-content: right; margin-top: 10px;">
+        <div class="right-section" style="gap: 20px;">
+            <a id="games" href="/s" class="<%= path === '/gm' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-home"></i> Home</span>
+            </a>
+            <a id="games" href="https://hydragames.cc/x" class="<%= path === '/gm' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-gamepad"></i> Games</span>
+            </a>
+            <a id="util" href="/ut" class="<%= path === '/ut' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-wrench"></i>Utilities</span>
+            </a>
+            <a class="<%= path === '/op' ? 'nav-active' : 'nav-btn' %>" id="settings" href="/op"
+                style="display: flex; justify-content: flex-end; margin-left: auto;">
+                <span><i class="fas fa-cog"></i> Settings</span>
+            </a>
+        </div>
+    </div>
+    <div class="games-body" style="gap: 10px; display: flex">
+        <article class="card" style="height: 80%;">
+            <article class="grid">
+                <div class="credit-item" style="height: 120px">
+                    <div class="credit-info">
+                        <div class="title">
+                            Equinox Utilities
+                            <p>A library of tools and bookmarklets to make your life easier. We cannot guarantee that
+                                all of these tools work.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2 style="font-weight: 500; color: white">Bookmarklets</h2>
+                <div class="credit-item">
+                    <div class="credit-info">
+                        <div class="title">
+                            Edit any page
+                            <p>This will allow you to edit the content of any webpage.</p>
+                        </div>
+                        <a href="javascript:console.log(document.body.contentEditable=&quot;true&quot;==document.body.contentEditable?&quot;false&quot;:&quot;true&quot;);"
+                            style="font-size: 12px; color: rgb(247, 247, 247); background-color: rgb(31, 31, 31); padding: 8px; border-radius: 4px;">Drag
+                            me to bookmarks</a>
+                    </div>
+                </div>
+                <div class="credit-item">
+                    <div class="credit-info">
+                        <div class="title">
+                            Piano
+                            <p>Add a piano to the page.</p>
+                        </div>
+                        <a href="javascript:void(document.head.appendChild(document.createElement(&quot;script&quot;)).src=&quot;https://cdn.jsdelivr.net/gh/Krazete/bookmarklets/piano.min.js&quot;)"
+                            style="font-size: 12px; color: rgb(247, 247, 247); background-color: rgb(31, 31, 31); padding: 8px; border-radius: 4px;">Drag
+                            me to bookmarks</a>
+                    </div>
+                </div>
+                <div class="credit-item">
+                    <div class="credit-info">
+                        <div class="title">
+                            History flooder
+                            <p>Will flood your history.</p>
+                        </div>
+                        <a href="javascript:var num=prompt(&quot;History flood amount:&quot;);done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert(%22History%20flood%20successful!%20%22+window.location.href+%22%20now%20appears%20in%20your%20history%20%22+num+(num==1?%22%20time.%22:%22%20times.%20(ajaxdev)%22))}"
+                            style="font-size: 12px; color: rgb(247, 247, 247); background-color: rgb(31, 31, 31); padding: 8px; border-radius: 4px;">Drag
+                            me to bookmarks</a>
+                    </div>
+                </div>
+                <div class="credit-item">
+                    <div class="credit-info">
+                        <div class="title">
+                            Developer console
+                            <p>Adds a developer console to the page.</p>
+                        </div>
+                        <a href="javascript:(function()%7B(function() %7Bvar x %3D document.createElement(&quot;script&quot;)%3Bx.src %3D &quot;https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FSnowLord7%2Fdevconsole%40master%2Fmain.js&quot;%3Bx.onload %3D alert(&quot;Loaded Developer Console!&quot;)%3Bdocument.head.appendChild(x)%3B%7D)()%7D)()"
+                            style="font-size: 12px; color: rgb(247, 247, 247); background-color: rgb(31, 31, 31); padding: 8px; border-radius: 4px;">Drag
+                            me to bookmarks</a>
+                    </div>
+                </div>
+
+
+            </article>
+
+        </article>
+
+
+    </div>
+    </div>
+    <script>
+        (function (btlwh) {
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = btlwh || {};
+            s.src = "\/\/glum-mortgage.com\/b.XnVMswdjGOlW0\/Y\/WHcc\/AesmN9du\/ZAUXlBkRPGTVUyz\/NWzCY\/0yOED\/QTtaNGTtMV3qN_jUQE4CN\/Qw";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+        })({})
+    </script>
+    <script>
+            (function (bcvnjr) {
+                var d = document,
+                    s = d.createElement('script'),
+                    l = d.scripts[d.scripts.length - 1];
+                s.settings = bcvnjr || {};
+                s.src = "\/\/wellwornpick.com\/cVD\/9.6\/bJ2Z5hlISkW\/QU9nNkTaMh0\/NdT_YqxeOVSP0\/1YMnz_Qi1fN\/jhIjwj";
+                s.async = true;
+                s.referrerPolicy = 'no-referrer-when-downgrade';
+                l.parentNode.insertBefore(s, l);
+            })({})
+    </script>
+</body>
+
+</html>

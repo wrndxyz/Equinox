@@ -1,0 +1,23 @@
+{
+  "name": "eclipse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "@wrndxyz/eclipse"
+  },
+  "author": "wrnd",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tomphttp/bare-server-node": "^2.0.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-useragent": "^1.0.15"
+  }
+}

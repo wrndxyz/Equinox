@@ -1,0 +1,23 @@
+{
+    "name": "Equinox",
+    "description": "Experience the internet without censorship.",
+    "image": "heroku/nodejs",
+    "addons": [],
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "scripts": {
+      "start": "npm start"
+    },
+    "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "Free"
+      }
+    }
+  }

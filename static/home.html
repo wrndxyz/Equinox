@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="82d50f63b4809b775ffdea9a75992354faa4d9e7" content="82d50f63b4809b775ffdea9a75992354faa4d9e7" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/cloak/google-drive.png">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/index.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-PC9KFJ31NH');
+    </script>
+</head>
+
+<body style="background-image: url(./assets/img/eq-main.jpg); overflow-y: hidden;">
+
+    <div class="topbar">
+        <div class="left-buttons">
+
+            <a id="left" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-arrow-left"></i></span>
+            </a>
+            <a id="right" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a id="reload" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>" onclick="reloadIfr()">
+                <span><i class="fas fa-redo"></i></span>
+            </a>
+        </div>
+        <form id="form" class="center-form">
+            <input autofocus autocomplete="off" class="search" id="search" placeholder="Search the web or enter a URL"
+                required />
+            <button type="submit" class="submit-button">
+                <i class="fas fa-search searchicon"></i>
+            </button>
+        </form>
+        <div class="right-section">
+            <a href="/" class="nav-btn">
+                <span><i class="fas fa-home"></i></span>
+            </a>
+            <a id="menu" href="#" class="nav-btn dropdown-btn">
+                <span><i class="fas fa-ellipsis-h"></i></span>
+            </a>
+        </div>
+    </div>
+    <div id="tabbar" class="tabbar" style="display: none">
+        <div id="tabbox" data-tab="1" class="tabbox">
+            <span class="tab active" onclick="switchTab(1)">New Tab</span>
+        </div>
+    </div>
+    <div id="iframe-container" style="height: 100%; width: 100%">
+        <iframe id="ifr" style="display: block; height: 100%; width: 100%; border: none;" src="/search.html"
+            data-tab="1"></iframe>
+    </div>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/proxy.js" defer></script>
+    <script>
+        (function (btlwh) {
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = btlwh || {};
+            s.src = "\/\/glum-mortgage.com\/b.XnVMswdjGOlW0\/Y\/WHcc\/AesmN9du\/ZAUXlBkRPGTVUyz\/NWzCY\/0yOED\/QTtaNGTtMV3qN_jUQE4CN\/Qw";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+        })({})
+    </script>
+    <script>
+            (function (bcvnjr) {
+                var d = document,
+                    s = d.createElement('script'),
+                    l = d.scripts[d.scripts.length - 1];
+                s.settings = bcvnjr || {};
+                s.src = "\/\/wellwornpick.com\/cVD\/9.6\/bJ2Z5hlISkW\/QU9nNkTaMh0\/NdT_YqxeOVSP0\/1YMnz_Qi1fN\/jhIjwj";
+                s.async = true;
+                s.referrerPolicy = 'no-referrer-when-downgrade';
+                l.parentNode.insertBefore(s, l);
+            })({})
+    </script>
+</body>
+
+</html>

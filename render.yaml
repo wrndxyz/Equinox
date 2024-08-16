@@ -1,0 +1,6 @@
+ services:
+  - type: web
+    name: cool-site
+    env: node
+    plan: free
+    startCommand: npm install && npm start

@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="82d50f63b4809b775ffdea9a75992354faa4d9e7" content="82d50f63b4809b775ffdea9a75992354faa4d9e7" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/options.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="/assets/css/games.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/cloak/google-drive.png">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/index.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-PC9KFJ31NH');
+    </script>
+
+    <style>
+        .credit-item {
+            border: 0.4px solid #3333338c;
+            border-radius: 10px;
+            padding: 15px;
+            line-height: 45px;
+            padding-top: 20;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #111111;
+            margin-right: 20px;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .card {
+            article {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: none">
+    <div class="topbar" style="justify-content: right; margin-top: 10px;">
+        <div class="right-section" style="gap: 20px;">
+            <a id="games" href="/s" class="<%= path === '/gm' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-home"></i> Home</span>
+            </a>
+            <a id="games" href="https://hydragames.cc/x" class="<%= path === '/gm' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-gamepad"></i> Games</span>
+            </a>
+            <a id="util" href="/ut" class="<%= path === '/ut' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-wrench"></i>Utilities</span>
+            </a>
+            <a class="<%= path === '/op' ? 'nav-active' : 'nav-btn' %>" id="settings" href="/op"
+                style="display: flex; justify-content: flex-end; margin-left: auto;">
+                <span><i class="fas fa-cog"></i> Settings</span>
+            </a>
+        </div>
+    </div>
+    <div class="games-body">
+
+        <article class="card">
+            <article class="grid gap-big">
+                <div class="title">
+                    Search Settings
+                    <p>Settings related to Equinox Search</p>
+                </div>
+                <div class="grid col-2">
+                    <fieldset>
+                        <label>Select a search engine - <span style="color: red">Disabled</span></label>
+                        <select id="engine" class="input-group" name="engine" disabled>
+                            <option value="google">Google</option>
+                            <option value="duckduckgo">DuckDuckGo</option>
+                            <option value="yahoo">Yahoo</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </article>
+        </article>
+        <article class="card">
+            <article class="grid gap-big">
+                <div class="title">
+                    Preferences & Security
+                    <p>Customize your experience on Equinox</p>
+                </div>
+                <div class="grid col-2">
+                    <fieldset>
+                        <label>
+                            Tab Cloaking - <span style="color: red">Disabled</span>
+                            <p>Change the tab icon and title of the page.</p>
+                        </label>
+                        <div class="button-group">
+                            <button type="button" id="google-cloak"
+                                class="cloak-button"><img class="cloak-img"
+                                    src="/assets/img/cloak/google.png"></button>
+                            <button type="button" id="docs-cloak" class="cloak-button"><img
+                                    class="cloak-img" src="/assets/img/cloak/docs.png"></button>
+                            <button type="button" id="drive-cloak"
+                                class="cloak-button"><img class="cloak-img"
+                                    src="/assets/img/cloak/google-drive.png"></button>
+                            <button type="button" id="classroom-cloak"
+                                class="cloak-button"><img class="cloak-img" src="/assets/img/cloak/classroom.png"></button>
+                            <button type="button" id="chrome-cloak"
+                                class="cloak-button"><img class="cloak-img"
+                                    src="/assets/img/cloak/chrome.png"></button>
+
+
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="button" id="none-cloak">Reset</button>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            About:Blank
+                            <p>Coming soon...</p>
+                        </label>
+
+                    </fieldset>
+                </div>
+            </article>
+        </article>
+        <article class="card">
+            <article class="grid gap-big">
+                <div class="title">
+                    Version Details
+                    <p>Relevant system and build information of Equinox</p>
+                </div>
+                <div class="grid col-2">
+                    <fieldset>
+                        <label>
+                            Version Number
+                            <p id="eqversion">1.0<span id="latestorno"> (Latest)</span></p>
+                        </label>
+                        <label>
+                            Build Number
+                            <p id="buildnumber">1</p>
+                        </label>
+                        <label>
+                            Server
+                            <p>US-01</p>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            © 2024 Equinox Proxy. All rights reserved.
+
+                            <p style="line-height: 20px">Equinox, formally known as Equinox Proxy, is a web proxy
+                                service owned
+                                by WRND. Our mission is to provide users with unrestricted access to the web. Equinox's
+                                code is
+                                open source and can be used by anyone under the terms of the MIT License. By using this
+                                site,
+                                you agree to our Terms of Service, which include but are not limited to the following:
+                                users are
+                                responsible for their actions while using Equinox, including compliance with all
+                                applicable laws
+                                and regulations; we do not guarantee the availability, accuracy, or security of the
+                                service.
+                                Thank you for using Equinox!</p>
+
+                            <img class="cloak-img" style="width: auto; height: 90px" src="/assets/img/eqwrnd.png">
+                        </label>
+                    </fieldset>
+                </div>
+            </article>
+        </article>
+    </div>
+    </div>
+    <script>
+        (function (btlwh) {
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = btlwh || {};
+            s.src = "\/\/glum-mortgage.com\/b.XnVMswdjGOlW0\/Y\/WHcc\/AesmN9du\/ZAUXlBkRPGTVUyz\/NWzCY\/0yOED\/QTtaNGTtMV3qN_jUQE4CN\/Qw";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+        })({})
+    </script>
+</body>

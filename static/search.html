@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="82d50f63b4809b775ffdea9a75992354faa4d9e7" content="82d50f63b4809b775ffdea9a75992354faa4d9e7" />
+
+    <title>New Tab</title>
+
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/search.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9KFJ31NH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PC9KFJ31NH');
+    </script>
+</head>
+
+<body style="background-image: url(./assets/img/eq-main.jpg)">
+    <div class="topbar" style="justify-content: right; margin-top: 10px;">
+        <div class="right-section" style="gap: 20px;">
+            <a id="games" href="#" class="<%= path === '/gm' ? 'nav-active' : 'nav-btn' %>" onclick="redirectToGames()">
+                <span><i class="fas fa-gamepad"></i> Games</span>
+            </a>
+            <a id="util" href="/ut" class="<%= path === '/ut' ? 'nav-active' : 'nav-btn' %>">
+                <span><i class="fas fa-wrench"></i>Utilities</span>
+            </a>
+            <a class="<%= path === '/op' ? 'nav-active' : 'nav-btn' %>" id="settings" href="/op"
+                style="display: flex; justify-content: flex-end; margin-left: auto;">
+                <span><i class="fas fa-cog"></i> Settings</span>
+            </a>
+        </div>
+    </div>
+    <div class="alignment-container" style="margin-top:8%;">
+        <div class="header-container">
+            <div class="logo-image">
+                <img src="/assets/img/eqlogo.png" alt="logo" id="spinning" width="100%">
+            </div>
+
+        </div>
+        <form id="form" class="center-form">
+            <button type="submit" class="submit-button">
+                <i style="color: grey" class="fas fa-search searchicon"></i>
+            </button>
+            <input autofocus autocomplete="off" class="search" id="search" placeholder="What's on your mind?"
+                required />
+
+        </form>
+
+        <div class="shortcuts">
+            <div class="shortcut-frame">
+                <div class="game-container" onclick='proxy("https://wrnd.lat")'>
+                    <div class="game">
+                        <img src="/assets/img/wrnd-ico.png">
+                    </div>
+                </div>
+                <div class="game-container" onclick='proxy("https://hydragames.cc/surge")'>
+                    <div class="game">
+                        <img src="/assets/img/surge-ico.png">
+                    </div>
+                </div>
+                <div class="game-container" onclick='proxy("https://netflix.com")'>
+                    <div class="game">
+                        <img src="/assets/img/netflix-ico.png">
+                    </div>
+                </div>
+                <div class="game-container" onclick='proxy("https://twitch.tv")'>
+                    <div class="game">
+                        <img src="/assets/img/twitch-ico.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a title="discord" class="fitem" target="_blank" href="/tos">Terms</a>
+            <a title="discord" class="fitem" target="_blank" href="https://discord.gg/H7JqRwykhk">Discord</a>
+            <a title="version" target="_blank" href="https://github.com/wrndxyz/Equinox"
+                style="color: rgb(151, 151, 151); font-weight: 500">
+                Equinox V3
+            </a>
+            <a title="github" class="fitem" target="_blank" href="https://github.com/wrndxyz/">WRND</a>
+            <a title="discord" class="fitem" target="_blank" href="/creds">Credits</a>
+        </footer>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/search.js" defer></script>
+    <script>
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const searchValue = document.getElementById('search').value;
+            go(searchValue);
+        });
+    </script>
+    
+</body>
+
+</html>

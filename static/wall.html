@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Assessment | Easy Learning</title>
+    <meta property="og:type" content="website">
+    <meta name="robots" content="noindex, nofollow">
+    <meta
+        content="Education Assessment is a versatile assessment platform that combines the ease of use needed for simple classroom assessments with the customization required to deploy common assessments at scale."
+        property="og:description">
+    <meta content="Education Assessment | Easy Learning" property="og:title">
+    <meta
+        content="Education Assessment is a versatile assessment platform that combines the ease of use needed for simple classroom assessments with the customization required to deploy common assessments at scale."
+        name="description">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #070707;
+            overflow: hidden;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: rgb(121, 121, 121);
+            margin: 10px 0;
+        }
+
+        .small-text {
+            font-size: 14px;
+            color: rgb(121, 121, 121);
+            margin: 5px 0;
+        }
+
+        .grey-text {
+            font-size: 14px;
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            width: 15%;
+            flex-direction: column;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #252525;
+            border-radius: 4px;
+            color: white;
+            background-color: #121212;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #1e1e1e;
+            color: #c1c1c1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        a {
+            color: #a0a0a0;
+            text-decoration: none;
+            margin-left: 2px;
+        }
+
+        #message {
+            color: rgb(230, 41, 41);
+        }
+    </style>
+
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Validate License</h1>
+        <p>To gain access to this site, please enter the license key that has been provided to you.</p>
+        <p>Once you've verified your license, you won't need to re-enter it.</p>
+        <form id="licenseForm">
+            <input id="licenseInput" type="text" name="license" placeholder="Enter your license key" required="">
+            <input type="submit" value="Submit">
+        </form>
+        <p id="message"></p>
+        <p id="three">For support or any questions, please visit <a href="https://join.wrnd.xyz">join.wrnd.xyz</a>.</p>
+
+    </div>
+    <script src="/assets/js/wall.js" defer></script>
+
+</body>
+
+</html>
