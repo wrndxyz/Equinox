@@ -5,7 +5,6 @@ import path from "path";
 import dotenv from "dotenv";
 import useragent from "express-useragent";
 import cookieParser from "cookie-parser";
-import { check } from './inj.js';
 
 dotenv.config();
 
@@ -19,33 +18,6 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use("/edu/", express.static(path.join(__dirname, "/assets/uv")));
 app.use(express.static(path.join(__dirname, "/static")));
-
-// security checkpoint, don't delete
-const checkpoint = async (req, res, next) => {
-    const license = req.cookies['license'];
-    const host = req.headers.host || '';
-
-    if (req.path.endsWith('.css') || req.path.endsWith('.js') || req.path.endsWith('.png') || req.path.endsWith('.jpg') || req.path.endsWith('.svg') || req.path.endsWith('.ico')) {
-        return next();
-    }
-
-    try {
-        if (license) {
-            return next();
-        } else {
-            const isAllowed = await check(host);
-            if (isAllowed) {
-                return next();
-            } else {
-                return res.sendFile(path.join(__dirname, '/static/wall.html'));
-            }
-        }
-    } catch (error) {
-        return res.status(500).send('Internal Server Error');
-    }
-};
-
-app.use(checkpoint);
 
 const routes = [
     { path: "/", file: "/static/home.html" },
